@@ -2613,10 +2613,10 @@ namespace EGMGame
             {
                 FileInfo file = new FileInfo(path);
                 newPath = file.FullName;
-                if (newPath.Contains("C:\\EGMGame\\EGMGame"))
-                    newPath = file.FullName.Replace("C:\\EGMGame\\EGMGame", "");
-                if (newPath.Contains("C:\\EGMGame\\GameLibrary"))
-                    newPath = file.FullName.Replace("C:\\EGMGame\\GameLibrary", "");
+                if (newPath.Contains(@"C:\EGMGame\EGMGame"))
+                    newPath = file.FullName.Replace(@"C:\EGMGame\EGMGame", "");
+                if (newPath.Contains(@"C:\EGMGame\GameLibrary"))
+                    newPath = file.FullName.Replace(@"C:\EGMGame\GameLibrary", "");
                 if (file.Exists && !File.Exists(Application.StartupPath + @"\Source" + newPath))
                 {
                     if (file.Extension.ToLower() == ".cs" || file.Extension.ToLower() == ".ico")
