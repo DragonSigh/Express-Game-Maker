@@ -42,6 +42,8 @@ namespace EGMGame
 {
     public partial class MainForm : Form, IRibbonForm
     {
+        string EnginePath = @"C:\EGMGame";
+
         #region Ribbon
         static int getOSArchitecture()
         {
@@ -1132,8 +1134,6 @@ namespace EGMGame
         DeserializeDockContent m_deserializeDockContent;
         TestPlayDialog testPlayDialog;
         LoadDialog loadDialog;
-
-        string EnginePath = @"C:\EGMGame";
         #endregion
 
         public MainForm()
