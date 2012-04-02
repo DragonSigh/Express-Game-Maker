@@ -1,0 +1,11 @@
+﻿/* -----------------------------
+ * ComboBoxes
+ * -----------------------------
+ * This file will explain the layout of the ComboBoxes.
+ * Nearly all of the Comboboxes have the same function layout, some have more functions.
+ *
+ * Initialize() - Initalizes the combobox. May contain custom code.
+ * RefreshList(bool memorize) - Populates the combobox with new items. Some RefreshList have more than one parameter.
+ * Data() - Returns the data with the datatype associated with the combobox.
+ * Select(int id) - Selects the combobox item with the given id. The id value is the id of the Game object associated with the combobox.
+ */

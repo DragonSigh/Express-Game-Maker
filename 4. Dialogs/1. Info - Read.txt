@@ -1,0 +1,33 @@
+﻿/* -----------------------------
+ * Dialogs
+ * -----------------------------
+ * AnimatedTileDialog.cs - Used by the Tileset editor for Animated Tiles.
+ * BuildContentDialog.cs - Used to display while building content. 
+ * CategoryDialog.cs - Used by the Materials Explorer to shortcut adding content to an editor and inserting to the selected Category.
+ * ChooseImagesDialog.cs - Used by the Particle Editor to select Images for a Particle.
+ * ChooseMaterial.cs - A dialog that displays materials to choose from.
+ * ChooseMemberDialog.cs - A dialog that lists party members.
+ * CollisionDataDialog.cs - 
+ * CollisionParameterConfirmDialog.cs - 
+ * ColorPickerDialog.cs - A color picker dialog.
+ * ConfirmRemoveDialog.cs - Used by add/remove lists to confirm remove.
+ * CrashRecoveryDialog.cs - Used by Crash Recovery system.
+ * DatabaseDialog.cs - Displays a list of databases and their values to choose from.
+ * DescriptionDialog.cs - Allows for adding detailed description to Items. Useful for displaying ingame menus.
+ * ErrorDisplayDialog.cs - Displays detailed error.
+ * EventSettingsDialog.cs - Modify Event Rotation on Map. 
+ * FontGenDialog.cs - Generate a Sprite Font from the system font list.
+ * LayerBGDialog.cs - Modify background settings for layer.
+ * LayerSingleDialog.cs - Modify a layer background's position, size, and rotation.
+ * LoadDialog.cs - A dialog that displays project loading information.
+ * MapDirectoryDialog.cs - Set the map's name.
+ * MapEffectsDialog.cs - Add default background music, sound, tint and, fog. 
+ * MapGravityDialog.cs - Set Map Gravity.
+ * MapGridDialog.cs - Resize Map Grid.
+ * MapResizeDialog.cs - Resize Map.
+ * MessagePreviewDialog.cs - 
+ * NewProjectWiz.cs - New Project Creation dialog
+ * TestPlayDialog.cs - 
+ * TilePickerDialog.cs - 
+ * TileSettingsDialog.cs - Modify a tile's position, size, and rotation.
+ */

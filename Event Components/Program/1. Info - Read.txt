@@ -1,0 +1,25 @@
+﻿/* -----------------------------
+ * Program
+ * -----------------------------
+ * CommandListDialog.cs - List of all commands in one dialog.
+ * ProgramDynamicsDialog.cs - Program Event Dynamics such as movement, jump, apply force and etc.
+ * ------------------
+ * Attachments - Event commands that have to do with Physics Attachments/Joints.
+ * Battle - Event commands that have to do with Battle. Allows users to program Enemies and Heroes to perform specific actions.
+ * Conditions - Event commands that have to do with Conditions. Conditions must be fullfilled in order for programs inside it to continue
+ * Data - Event commands that have to do with Data such as Variables, Strings, Switches and Lists.
+ * Display - Event commands that have to do with Displaying Messages, Menus, Animations and Cursor.
+ * Event - Event commands that have to do with Events suching Adding and Deleting Events.
+ * Graphics - Event commands that have to do with Graphics such as that allow users to draw on to the screen.
+ * Guide - Event commands that have to do with Saving, Loading and Xbox.
+ * Hero - Event commands that have to do with Heroes such as Changing Equipment and healing.
+ * Loops - Event commands that have to do with Loop commands that loop commands that are inside the loop.
+ * Map - Event commands that have to do with Map such as transfering player to new map, toggling map layer, scrolling camera, editing gravity, and reloading the map.
+ * Other - Event commands such as Wait, Timer, Comment, Region, Reload Game, Exit Game, and etc.
+ * Particle - Event commands that have to do with Particle Effects.
+ * Party - Event commands that affect the whole party.
+ * Picture - Event commands that have to do with Pictures such as displaying, moving, and tinting.
+ * Dynamics - Event commands that are in the ProgramDynamicsDialog.cs.
+ * Screen - Event commands that have to do with the Screen such as Fadeout, Fadin,, Shake, Tint and Flash.
+ * Sound - Event commands that have to do with playing sound, 3D Sound, and playlist.
+ */

@@ -1,0 +1,18 @@
+﻿/* -----------------------------
+ * Dialogs
+ * -----------------------------
+ * AnimationAssignmentDialog.cs - Assigns Animation Actions to Heroes and Enemies such as Walk, Skill, Magic actions.
+ * CurveGenDialog.cs - Creates a curve for a Dataset List that can be used for Experience, Strength, and Intelligence. Ex: Experience[level]
+ * DatasetListDialog.cs - Helps add values to a Dataset List that is used for level based progression properties such as Strength and Defense.  Ex: Strenght[level]
+ * GraphDisplayDialog.cs - Displays the curve graph when the mouse is over a Dataset List.
+ * DBConditionsDialog.cs - Sets the condition for an action to be performed.
+ * DropableItemsDialog.cs - Sets the items that can be dropped by an Enemy. This is not included in the Engine by default. 
+ * EnemyProgramDialog.cs - Program enemy actions using this dialog. You can program enemy actions through Events as well.
+ * PhysicsQuicksetDialog.cs - A list of reusable physics settings.
+ * ProjectileForceDialog.cs - Set Projectile Movement by amount of force applied.
+ * ProjectileMovementDialog.cs - Set Projectile Movement.
+ * StealableItemsDialog.cs - Set the items that can be stealed from the enemy. This is not included in the Engine by default.
+ * FromSpriteSheetDialog.cs - Creates an animation from a spritesheet.
+ * FromSpriteSheetForDirDialog.cs - Creates an animation from a spritesheet for a single direction.
+ * FlashFrameDialog.cs - Flash Screen on animation.
+ */

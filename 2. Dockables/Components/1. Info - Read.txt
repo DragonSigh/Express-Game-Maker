@@ -1,0 +1,6 @@
+﻿/* -----------------------------
+ * Components
+ * -----------------------------
+ * DatasetControl.cs - Holds Database Editor Datasets. Check Database Editor on how this user control is used.
+ * DoubleBufferedFlowLayoutControl.cs - A double buffered flow layout control.
+ */

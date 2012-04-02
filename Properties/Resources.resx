@@ -1,0 +1,1354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FloatWindow_Constructor_NullDockPanel" xml:space="preserve">
+    <value>Invalid argument: DockPanel can not be "null".</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DockIndicator_PanelBottom_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelBottom_Active.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eyedropper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyedropper.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bulb_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globallightbulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globallightbulb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_ellipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer-shape-ellipse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_DockAreas_InvalidValue" xml:space="preserve">
+    <value>Invalid Value: The value of DockAreas conflicts with current DockState.</value>
+  </data>
+  <data name="edit_underline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_underline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_Constructor_NullContent" xml:space="preserve">
+    <value>Invalid argument: Content can not be "null".</value>
+  </data>
+  <data name="DockContent_HideOnClose_Description" xml:space="preserve">
+    <value>Indicates the content will be hidden instead of being closed.</value>
+  </data>
+  <data name="EventE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EventE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-270.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_Left.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelRight.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alarm_clock_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alarm--clock--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="draw_vertex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\draw_vertex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cursor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_beam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\music-beam.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayerCircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayerCircle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocket_fly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocket_fly.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rounded3In" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rounded3In.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_continue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-continue-000-top.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paint_can" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paint-can.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black_square.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="balloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balloon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weather_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weather_clouds.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplashPageSq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SplashPageSq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_number_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document--number--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document--arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_HotspotIndex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_HotspotIndex.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TilesetE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TilesetE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelLeft.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_TabPageContextMenu_Description" xml:space="preserve">
+    <value>Context menu displayed for the dock pane tab strip.</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContinueTrial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContinueTrial.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MapE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock--exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock--exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chain.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\controller.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning_minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erase_fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\erase_fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DatabaseE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatabaseE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_Show_NullDockPanel" xml:space="preserve">
+    <value>DockPanel can not be null.</value>
+  </data>
+  <data name="W_Fist001161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\W_Fist001161.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ContentRemoved_Description" xml:space="preserve">
+    <value>Occurs when a content removed from the DockPanel.</value>
+  </data>
+  <data name="DockPaneCaption_ToolTipClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textfield_rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textfield_rename.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-090.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_Show_NullPane" xml:space="preserve">
+    <value>The Pane can not be null.</value>
+  </data>
+  <data name="tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_film" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_film.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Category_DockingNotification" xml:space="preserve">
+    <value>Docking Notification</value>
+  </data>
+  <data name="Bubble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bubble.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layers_arrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layers-arrange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_dowRgiht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_dowRgiht.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_hf_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layout-hf-2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="world" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\world.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_DockTo_InvalidContainer" xml:space="preserve">
+    <value>The specified container conflicts with the IsFloat property.</value>
+  </data>
+  <data name="database1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\table--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FloatWindow_SetPaneIndex_InvalidPane" xml:space="preserve">
+    <value>Invalid Pane: DockPane not within the collection.</value>
+  </data>
+  <data name="balloon_ellipsis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balloon-ellipsis.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation-090" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation-0901.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_italic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_repeat_variable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-repeat-variable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_TabText_Description" xml:space="preserve">
+    <value>The tab text displayed in the dock pane. If not set, the Text property will be used.</value>
+  </data>
+  <data name="paint_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paint-brush.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users--magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VariableE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VariableE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fire.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_AutoHide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockPane_AutoHide.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_repeat_hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-repeat-hash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_Hotspot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_Hotspot.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fire1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="currency" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\currency.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameController" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameController.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_ShowHint_InvalidValue" xml:space="preserve">
+    <value>Invalid value, check DockableAreas property.</value>
+  </data>
+  <data name="pixel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pixel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart_curve_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart_curve_edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ui_search_field" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui_search_field.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_Dock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockPane_Dock.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_get" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application-blue--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ActiveDocumentChanged_Description" xml:space="preserve">
+    <value>Occurs when the value of ActiveDocument property changed.</value>
+  </data>
+  <data name="map--plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\box.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globe_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globe-green.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\music.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_strike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_strike.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="databases_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\databases--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ValidateEGM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValidateEGM.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserPerson.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_number_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-number-small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_LoadFromXml_InvalidXmlFormat" xml:space="preserve">
+    <value>The XML file format is invalid.</value>
+  </data>
+  <data name="music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\music2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="television_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\television_image.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation_Left_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation_Left_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation-090.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelTop.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grid_snap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grid-snap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transform_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transform_selection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_block.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_prepare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_prepare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelBottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelBottom.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnimationE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnimationE1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_dropcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_dropcaps.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_IsFloat_InvalidValue" xml:space="preserve">
+    <value>Invalid value, conflicts with DockableAreas  property.</value>
+  </data>
+  <data name="minus16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus16.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-list.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_AllowEndUserDocking_Description" xml:space="preserve">
+    <value>Determines if end user drag and drop docking is allowed.</value>
+  </data>
+  <data name="DockPanel_RightToLeftLayout_Description" xml:space="preserve">
+    <value>Indicates whether the control layout is right-to-left when the RightToLeft property is set to Yes.</value>
+  </data>
+  <data name="film" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\film1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Category_Docking" xml:space="preserve">
+    <value>Docking</value>
+  </data>
+  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fourDCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fourDCursor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bulb_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flask.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadDialog1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoadDialog1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DefaultFloatWindowSize_Description" xml:space="preserve">
+    <value>The default size of float window.</value>
+  </data>
+  <data name="font" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\font1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart_curve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockCloseHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockCloseHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DocumentStyle_Description" xml:space="preserve">
+    <value>The style of the document window.</value>
+  </data>
+  <data name="DockContentHandler_SetDockState_InvalidState" xml:space="preserve">
+    <value>The dock state is invalid.</value>
+  </data>
+  <data name="GroupBoxRestore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroupBoxRestore.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelFill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelFill.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockHandler_TabPageContextMenuStrip_Description" xml:space="preserve">
+    <value>Context menu displayed for the dock pane tab strip.</value>
+  </data>
+  <data name="document-copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-copy1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palette_paint_brush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\palette-paint-brush.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch-small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_Right.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer-shape-triangle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_document_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_document_list.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_leftUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_leftUp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Verdana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Verdana.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire_big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fire_big.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_ShowHint_Description" xml:space="preserve">
+    <value>The desired docking state when first showing.</value>
+  </data>
+  <data name="keyboard_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dockindicator_PaneDiamond_Fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dockindicator_PaneDiamond_Fill.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controller_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\controller_error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_open_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-open-image.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bulb_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb-off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="database_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_upRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_upRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_Show_InvalidBeforeContent" xml:space="preserve">
+    <value>Invalid beforeContent, it must be contained by the pane.</value>
+  </data>
+  <data name="image_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-empty.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Category_PropertyChanged" xml:space="preserve">
+    <value>Property Changed</value>
+  </data>
+  <data name="document_number" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-number.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_Bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_Bottom.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Express Your Creativity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Express Your Creativity1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross-circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_label_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tag-label-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ActiveContentChanged_Description" xml:space="preserve">
+    <value>Occurs when the value of ActiveContentProperty changed.</value>
+  </data>
+  <data name="DockPanel_Persistor_XmlFileComment2" xml:space="preserve">
+    <value>!!! AUTOMATICALLY GENERATED FILE. DO NOT MODIFY !!!</value>
+  </data>
+  <data name="pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_AutoHidePortion_OutOfRange" xml:space="preserve">
+    <value>The provided value is out of range.</value>
+  </data>
+  <data name="plus16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus16.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_image.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moveHandle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moveHandle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grid_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grid_dot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mouse_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mouse_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkBox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation-270.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="binocular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\binocular.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_SetPaneIndex_InvalidIndex" xml:space="preserve">
+    <value>Invalid Index: The index is out of range.</value>
+  </data>
+  <data name="DockPaneCaption_ToolTipOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="DockPanel_ActivePaneChanged_Description" xml:space="preserve">
+    <value>Occurs when the value of ActivePane property changed.</value>
+  </data>
+  <data name="DockPanel_DockPanelSkin" xml:space="preserve">
+    <value>The visual skin to use when displaying the docked windows.</value>
+  </data>
+  <data name="DockPanel_DocumentTabStripLocation" xml:space="preserve">
+    <value>Determines where the tab strip for Document style content is drawn.</value>
+  </data>
+  <data name="mapedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapedit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelRight_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelRight_Active.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DockLeftPortion_Description" xml:space="preserve">
+    <value>Size of the left docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels.</value>
+  </data>
+  <data name="lightningplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightningplus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_downLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_downLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ShowDocumentIcon_Description" xml:space="preserve">
+    <value>Determines if the document icon will be displayed in the tab strip.</value>
+  </data>
+  <data name="keyboard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selectionLayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selectionLayer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_AllowEndUserDocking_Description" xml:space="preserve">
+    <value>Determines if the drag and drop docking is allowed.</value>
+  </data>
+  <data name="AboutBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AboutBack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_Show_InvalidPrevPane" xml:space="preserve">
+    <value>The previous pane is invalid. It can not be null, and its docking state must not be auto-hide.</value>
+  </data>
+  <data name="switch_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_SetContentIndex_InvalidContent" xml:space="preserve">
+    <value>Invalid Content: Content not within the collection.</value>
+  </data>
+  <data name="DockPane_DockTo_NoPrevPane" xml:space="preserve">
+    <value>The previous pane does not exist in the nested docking pane collection.</value>
+  </data>
+  <data name="layer_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer-shape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDockDragSource_DockTo_InvalidPanel" xml:space="preserve">
+    <value>Invalid DockPanel.</value>
+  </data>
+  <data name="DockPane_FloatWindow_InvalidValue" xml:space="preserve">
+    <value>FloatWindow property can not be set to "null" when DockState is DockState.Float.</value>
+  </data>
+  <data name="ArrayE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrayE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layers_stack_arrange_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layers-stack-arrange-back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flask_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flask_plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folderopen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirectBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DirectBack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inflictState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inflictState.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer-shape-line.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music_beam_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\music-beam-16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_bulb_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addmap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_DockAreas_Description" xml:space="preserve">
+    <value>Gets or sets a value indicating in which area of the DockPanel the content allowed to show.</value>
+  </data>
+  <data name="DockPanel_Description" xml:space="preserve">
+    <value>Provides Visual Studio .Net style docking.</value>
+  </data>
+  <data name="clock_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock-select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DockTopPortion_Description" xml:space="preserve">
+    <value>Size of the top docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels.</value>
+  </data>
+  <data name="DockPane_OptionOverflow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockPane_OptionOverflow.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_CloseButtonVisible_Description" xml:space="preserve">
+    <value>Shows or hides the close button of the content. This property does not function with System MDI Document Style.</value>
+  </data>
+  <data name="black_square2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black_square2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation-180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation-1801.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoryBoard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StoryBoard1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GreenBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenBackground1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow-circle-double-135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-circle-double-135.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer_shape_curve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_DockStateChanged_Description" xml:space="preserve">
+    <value>Occurs when the value of DockState property changed.</value>
+  </data>
+  <data name="DockPane_ActiveContent_InvalidValue" xml:space="preserve">
+    <value>Invalid Content: ActiveContent must be one of the visible contents, or null if there is no visible content.</value>
+  </data>
+  <data name="layer_shade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer_shade.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_bold.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_code.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_SetDockState_NullPanel" xml:space="preserve">
+    <value>The dock panel is null.</value>
+  </data>
+  <data name="layer_select_erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer_select_erase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPaneStrip_ToolTipWindowList" xml:space="preserve">
+    <value>Window List</value>
+  </data>
+  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application-blue--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoadDialog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W_Fist00114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\W_Fist00114.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document-export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_FloatPane_InvalidValue" xml:space="preserve">
+    <value>The pane is invalid. Check the IsFloat and DockPanel properties of this dock pane.</value>
+  </data>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weather_cloudy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weather_cloudy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart_organisation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chart_organisation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ContentAdded_Description" xml:space="preserve">
+    <value>Occurs when a content added to the DockPanel.</value>
+  </data>
+  <data name="FloatWindow_SetPaneIndex_InvalidIndex" xml:space="preserve">
+    <value>Invalid Index: The index is out of range.</value>
+  </data>
+  <data name="arrow_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-curve-180-left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_music.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_AutoHidePortion_Description" xml:space="preserve">
+    <value>The size to display the content in auto hide mode. Value &lt; 1 to specify the size in portion; value &gt;= 1 to specify the size in pixel.</value>
+  </data>
+  <data name="DockIndicator_PanelTop_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelTop_Active.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_LoadFromXml_InvalidFormatVersion" xml:space="preserve">
+    <value>The configuration file's version is invalid.</value>
+  </data>
+  <data name="anchor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anchor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_repeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-repeat.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="switch_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart-half" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-half.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newspaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newspaper.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_Constructor_NullDockPanel" xml:space="preserve">
+    <value>Invalid argument: The content's DockPanel can not be "null".</value>
+  </data>
+  <data name="iconHolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconHolder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="block--exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\block--exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelFill_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelFill_Active.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alarm_clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alarm-clock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield_plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard_paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clipboard-paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="variables" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\variables.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disks-black.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rounded3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rounded3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chain--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_ToolTipText_Description" xml:space="preserve">
+    <value>The text displayed when mouse hovers over the tab.</value>
+  </data>
+  <data name="document_stack_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document--stack--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_DockTo_SelfPrevPane" xml:space="preserve">
+    <value>The previous pane can not be itself.</value>
+  </data>
+  <data name="map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tilemap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tilemap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruler_crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruler_crop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hero.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContentHandler_Show_InvalidDockState" xml:space="preserve">
+    <value>Invalid DockState: Content can not be showed as "Unknown" or "Hidden".</value>
+  </data>
+  <data name="application_side_contract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_side_contract.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GlobalE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GlobalE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W_Fist00116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\W_Fist00116.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchesE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwitchesE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkboxChecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkboxChecked.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disk-black.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FontE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FontE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DockBottomPortion_Description" xml:space="preserve">
+    <value>Size of the bottom docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels.</value>
+  </data>
+  <data name="control_stop_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_stop_square.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navigation_Right_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navigation_Right_button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hero24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hero24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="removeState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\removeState.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_DockTo_NullPrevPane" xml:space="preserve">
+    <value>The previous pane can not be null when the nested docking pane collection is not empty.</value>
+  </data>
+  <data name="MusicE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MusicE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="film1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\film.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transform_layer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transform_layer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baloonelipses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baloonelipses.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PanelLeft_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PanelLeft_Active.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ask_and_answer16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ask_and_answer16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_polygon_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer_shape_polygon_red.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_move" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-move.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_AllowEndUserNestedDocking_Description" xml:space="preserve">
+    <value>Determines if the drag and drop nested docking is allowed.</value>
+  </data>
+  <data name="lightbulb_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightbulb-tick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MapAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_SetDockState_InvalidState" xml:space="preserve">
+    <value>The state for the dock pane is invalid.</value>
+  </data>
+  <data name="arrow_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_expand.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_Persistor_XmlFileComment1" xml:space="preserve">
+    <value>DockPanel configuration file. Author: Weifen Luo, all rights reserved.</value>
+  </data>
+  <data name="DockPaneStrip_ToolTipClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="music_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\music--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\function1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="balance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balance.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_side_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_side_expand.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-white.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anchor_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anchor_circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document-import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-import.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_wheel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_wheel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users--plus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockPane_Close.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_PaneDiamond_Top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockIndicator_PaneDiamond_Top.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruler.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_DockTo_NullContainer" xml:space="preserve">
+    <value>The container can not be null.</value>
+  </data>
+  <data name="dynamite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dynamite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_DockRightPortion_Description" xml:space="preserve">
+    <value>Size of the right docking window. Value &lt; 1 to specify the size in portion; value &gt; 1 to specify the size in pixels.</value>
+  </data>
+  <data name="HomepageBackTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomepageBackTest.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ParentForm_Invalid" xml:space="preserve">
+    <value>Invalid parent form. When using DockingMdi or SystemMdi document style, the DockPanel control must be the child control of the main MDI container form.</value>
+  </data>
+  <data name="application_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application-blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag_label" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tag-label.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textfield.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning_exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning_exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_SetContentIndex_InvalidIndex" xml:space="preserve">
+    <value>Invalid Index: The index is out of range.</value>
+  </data>
+  <data name="defaultState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultState.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockContent_Constructor_InvalidForm" xml:space="preserve">
+    <value>The form must be of type IDockContent.</value>
+  </data>
+  <data name="application_resize_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_resize_full.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eraser2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globe_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globe--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer_shape_polygon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layer_shape_polygon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_ActiveAutoHideContent_InvalidValue" xml:space="preserve">
+    <value>Invalid Content: The content must be auto-hide state and associates with this DockPanel.</value>
+  </data>
+  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupBoxCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroupBoxCollapse.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_LoadFromXml_AlreadyInitialized" xml:space="preserve">
+    <value>The DockPanel has already been initialized.</value>
+  </data>
+  <data name="user_silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-curve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_Poison0616" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_Poison0616.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockIndicator_ToolTipText" xml:space="preserve">
+    <value>Press SHIFT for docking to full side.</value>
+  </data>
+  <data name="DockContent_CloseButton_Description" xml:space="preserve">
+    <value>Enable/Disable the close button of the content.</value>
+  </data>
+  <data name="lightbulb_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightbulb--split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightbulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightbulb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Header2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPanel_SetPaneIndex_InvalidPane" xml:space="preserve">
+    <value>Invalid Pane: DockPane not within the collection.</value>
+  </data>
+  <data name="light_bulb_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light-bulb--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockPane_Option" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DockPane_Option.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users--arrow--left.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layers_arrange_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layers-arrange-back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EGMIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EGMIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DockAreaEditor_FloatCheckBoxText" xml:space="preserve">
+    <value>(Float)</value>
+  </data>
+  <data name="DockPaneCaption_ToolTipAutoHide" xml:space="preserve">
+    <value>Auto Hide</value>
+  </data>
+  <data name="DockContentHandler_DockPane_InvalidValue" xml:space="preserve">
+    <value>The pane is invalid. Check the IsFloat and DockPanel properties of this dock pane.</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus-circle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EGMLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EGMLogoBig.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="string" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\string.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="balance--pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balance--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

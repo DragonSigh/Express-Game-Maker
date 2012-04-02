@@ -1,0 +1,8 @@
+﻿/* -----------------------------
+ * Components
+ * -----------------------------
+ * ComboBoxes - Contains all custom Comboboxes that populate Game objects such as Items, Weapons, Heroes, etc.
+ * Guide - Contains Custom Dialog that can report Errors, Warnings and Info
+ * UI - Contains all Custom UI Enhancements.
+ * XNA - Contains nearly all XNA User Controls that are used by related editors.
+ */

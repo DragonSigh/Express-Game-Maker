@@ -1,0 +1,8 @@
+﻿/* -----------------------------
+ * Library
+ * -----------------------------
+ * FileIO - Cotnains classes to Save/Load game data.
+ * Game Data - Contains all of the Game Data classes such as HeroData, ItemData, AudioData, Animation Data, and etc.
+ * Reference Library - Contains libraries and plugins suchs as Physics, Xbox, Extensions, Error Reporter, and DockPanel
+ * XNA - Contains XNA components and the XNA Viewer. Referenced by all controls and forms that use and display graphics.
+ */

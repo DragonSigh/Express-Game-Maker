@@ -1,0 +1,19 @@
+﻿/* -----------------------------
+ * Dialogs
+ * -----------------------------
+ * ProgramOverviewDialog.cs - Provides tooltip for some commands in the Program List.
+ * AnimationListDialog.cs - Sets default animation and action for an Event.
+ * ControlMappingDialog.cs - Sets Custom Player Controls.
+ * EventInputDialog.cs - Sets Event Activation by Keyboard/Controller Input.
+ * EventJointsDialog.cs - Not used.
+ * EventMouseInputDialog.cs - Sets Event Activation by Mouse.
+ * EventPhysicSettingsDialog.cs - Sets the Physics properties of Event.
+ * JointsDialog.cs - Attaches Events as Joints to Event.
+ * PickPositionOnMapDialog.cs - Used by some Event Program Commands to pick a location on Map.
+ * ListEventsDialog.cs - Sets the Event Activation condition for On Collision with an Event(s).
+ * EventSwitchDialog.cs - Sets the display Event Switch condition for Event.
+ * VariablesDialog.cs - Sets the display Variable condition for Event.
+ * SwitchesDialog.cs  - Sets the display Switch condition for Event.
+ * LocalSwitchesDialog.cs - Sets the display Event Local Switch condition for Event.
+ * LocalVariablesDialog.cs - Sets the display Event Local Variable condition for Event.
+ */

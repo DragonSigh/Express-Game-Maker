@@ -1,0 +1,11 @@
+﻿/* -----------------------------
+ * Components
+ * -----------------------------
+ * BehaviorProgramListBox.cs - This listbox lists all the commands the user added for the event programming.
+ * EventEditorControl.cs - Contains the EventPageControl.
+ * EventPageControl.cs -  Contains the Event settings and BehaviorProgramListBox.
+ * GlobalEventPage.cs - Contains the Globsl Event settings and BehaviorProgramListBox.
+ * GlobalEventPageControl.cs - Contains the GlobalEventPageControl.
+ * MapEventEditorControl.cs - Contains the EventPageControl. Used by the MapEventEditor.
+ * PlayerPageControl.cs - Contains the Player settings and BehaviorProgramListBox.
+ */

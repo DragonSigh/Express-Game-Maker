@@ -1,0 +1,24 @@
+﻿/* -----------------------------
+ * 1. Start
+ * -----------------------------
+ * HomePage.cs - The first screen that is displayed after the program is displayed. It holds "Getting Started", "Returning User", "News".
+ * MainForm.cs - The Main form that holds all other forms and menus and process functions such as save and load project.
+ * Splash.cs - Used to check for updates before the program is displayed.
+ * --------------
+ * Classes
+ * --------------
+ * Program.cs - This is the access point.
+ * Config.cs - This class is loaded when the program starts. It holds users' recent projects, crashed projects, and keeps track of other user settings.
+ * Command.cs - This class holds static commands that could be used by any other class. Access with class name CMD.
+ * Settings.cs
+ * --------------
+ * Components
+ * --------------
+ * MenuContainer.cs - This the class that holds the three lists in the Home Page (Getting Started, Returning User, News).
+ * MenuList.cs - This the class that holds Home Page menu items for "Getting Started" and "Returning User".
+ * MenuListItem.cs - This the class that holds the Menu Text.
+ * MenuListItemCollection.cs -  This the class that holds the Menu Items.
+ * NewsMenuList.cs - This the class that holds Home Page menu items for News.
+ * NewsMenuListItem.cs - This the class that holds the News Text.
+ * NewsMenuListItemCollection.cs -  This the class that holds the News Menu Items.
+ */

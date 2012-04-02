@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Express Game Maker - Tutorials</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <font size="3" face="Calibri, Calibri">
+        <h2>
+            Maps</h2>
+        <p>
+            Maps are essential to your games. A map contains the game's environment and events.</p>
+        <p>
+            In order to <b>create a map</b>, first click on the
+            <img src="mapsBtn.PNG" width="38" height="48" alt="" title="" border="0" align="" />
+            button.</p>
+        <p>
+            Next, click the
+            <img src="addMapBtn.PNG" width="28" height="25" alt="" title="" border="0" align="" />
+            button to add a new map. Enter the map's name and click OK.</p>
+        <p>
+            Once the map is created you can modify its settings from its menu</p>
+        <ul>
+            <li>
+                <img src="mapSizeBtn.PNG" width="22" height="25" alt="" title="" border="0" align="" />
+                <b>Resize</b> the map.</li>
+            <li>
+                <img src="mapGridSizeBtn.PNG" width="22" height="20" alt="" title="" border="0" align="" />
+                <b>Resize</b> the map's <b>grid</b>.</li>
+            <li>
+                <img src="mapGravityBtn.PNG" width="21" height="22" alt="" title="" border="0" align="" />
+                Change the map's <b>gravity</b>.</li>
+            <li>
+                <img src="mapEffectsBtn.PNG" width="20" height="20" alt="" title="" border="0" align="" />
+                <b>Add effects</b> such as background music and screen tint.</li>
+            <li>
+                <img src="mapDimLayersBtn.PNG" width="25" height="24" alt="" title="" border="0"
+                    align="" />
+                Toggles the opacity of seperate layers, useful for general mapping.</li>
+            <li>
+                <img src="mapShowGridBtn.PNG" width="18" height="20" alt="" title="" border="0" align="" />
+                Shows the map's grid which can be an useful visual aid.</li>
+            <li>
+                <img src="mapSnaptoGridBtn.PNG" width="21" height="23" alt="" title="" border="0"
+                    align="" />
+                Snaps tiles to a grid. Useful for tile based mapping.</li>
+        </ul>
+        <p>
+            In order to <b>draw your map</b>, you'll need a tileset ready. If you don't know
+            how to make a tileset, check out the previous "Tilesets" tutorial.</p>
+        <p>
+            Once you create your tileset, <b>select</b> your tile from <b>Tiles</b> explorer.
+            Make sure
+            <img src="mapPencilBtn.PNG" width="18" height="21" alt="" title="" border="0" align="" />
+            is checked and eraser
+            <img src="mapEraserBtn.PNG" width="20" height="24" alt="" title="" border="0" align="" />
+            is not checked. Click on the map to <b>place</b> your tile. If "Snap to Grid"
+            <img src="mapSnaptoGridBtn.PNG" width="21" height="23" alt="" title="" border="0"
+                align="" />
+            is on, you can click and drag your mouse to <b>paint</b>.</p>
+        <p>
+            A map can have <b>unlimited layers</b>. Layers can be used differently for different
+            genres. For example, in a platformer game, everything you can interact with is usually
+            on the top most layer, the rest is scenery. In an RPG game, layers are usually used
+            to show tiles above or below player.</p>
+        <p>
+            You can only<b> edit </b>the layer that is <b>selected</b>. If you have a tile or
+            an event that is on the previous layer, you must select the previous layer and then
+            select the tile.</p>
+        <p>
+            To <b>edit</b> your tiles' <b>rotation, scaling and opacity</b>, you'll need to
+            select
+            <img src="mapCursorBtn.PNG" width="20" height="23" alt="" title="" border="0" align="" />.
+            Double click the tile to bring up the tile settings dialog. <b>Note:</b> If the
+            event view
+            <img src="mapEventBtn.PNG" width="20" height="26" alt="" title="" border="0" align="" />
+            is checked, then you can <b>only edit</b> events.&#39;</p>
+        <p>
+            When mapping for top-down RPG maps, there are some <b>guides</b> you should
+            follow:</p>
+        </li>
+        <ol>
+            <li>
+                    Setup your layers.
+                <ol>
+                    <li>
+                            To keep it basic, set two layers for below events, one event layer, and two above
+                            layers.
+                    </li>
+                    <li>
+                            In non-grid mode, you can layer tiles on top of each other in a single layer.
+                            Useful for adding detail.</li>
+                </ol>
+            </li>
+            <li>Design your map.
+                <ol>
+                    <li>Consider collision sizes, passages and walkways.</li>
+                    <li>Do not place collidable objects on pathways such as rocks. Placing things like 
+                        wells, trees and similar large objects for architecture is fine.</li>
+                    <li>Consider what needs to be always above events when mapping. If you make a 
+                        mistake, go to cursor mode, right click and either move the tile down or up a 
+                        layer.</li>
+                </ol>
+            </li>
+            <li>Test your map and correct any problems with layering or collision.</li>
+            <li>Add extra details, the little things do count.</li>
+            <li>
+                <p>
+                    Test again to make sure everything is where it&#39;s suppose to be and in its correct
+                    layers.</p>
+            </li>
+        </ol>
+        <p>
+            To learn about Events, check out the next tutorial.
+        </p>
+    </font>
+</body>
+</html>

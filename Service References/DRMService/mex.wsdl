@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.expressgamemaker.com/Services/DRM" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.expressgamemaker.com/Services/DRM" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.expressgamemaker.com/Services/DRM/Imports">
+      <xsd:import schemaLocation="https://update.expressgamemaker.com/DRM/service.svc/mex?xsd=xsd0" namespace="http://www.expressgamemaker.com/Services/DRM" />
+      <xsd:import schemaLocation="https://update.expressgamemaker.com/DRM/service.svc/mex?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://update.expressgamemaker.com/DRM/service.svc/mex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDRM_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_ValidateSerial_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSerial" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_ValidateSerial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateSerialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_GUIDExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GUIDExists" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_GUIDExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GUIDExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_ValidateGUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateGUID" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_ValidateGUID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateGUIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_UpdateGUID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGUID" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_TrialExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrialExists" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_TrialExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrialExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_BeginTrial_InputMessage">
+    <wsdl:part name="parameters" element="tns:BeginTrial" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_GetTrialData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrialData" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_GetTrialData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrialDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDRM_EndSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndSession" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IDRM">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Login">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/Login" message="tns:IDRM_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/LoginResponse" message="tns:IDRM_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="ValidateSerial">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/ValidateSerial" message="tns:IDRM_ValidateSerial_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/ValidateSerialResponse" message="tns:IDRM_ValidateSerial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="GUIDExists">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/GUIDExists" message="tns:IDRM_GUIDExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/GUIDExistsResponse" message="tns:IDRM_GUIDExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="ValidateGUID">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/ValidateGUID" message="tns:IDRM_ValidateGUID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/ValidateGUIDResponse" message="tns:IDRM_ValidateGUID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="UpdateGUID">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/UpdateGUID" message="tns:IDRM_UpdateGUID_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="TrialExists">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/TrialExists" message="tns:IDRM_TrialExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/TrialExistsResponse" message="tns:IDRM_TrialExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="BeginTrial">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/BeginTrial" message="tns:IDRM_BeginTrial_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="GetTrialData">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/GetTrialData" message="tns:IDRM_GetTrialData_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/GetTrialDataResponse" message="tns:IDRM_GetTrialData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="true" name="EndSession">
+      <wsdl:input wsaw:Action="http://www.expressgamemaker.com/Services/DRM/IDRM/EndSession" message="tns:IDRM_EndSession_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

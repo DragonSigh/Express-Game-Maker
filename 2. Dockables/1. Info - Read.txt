@@ -1,0 +1,12 @@
+﻿/* -----------------------------
+ * Dockables
+ * -----------------------------
+ * Contains all the dockable editors and the dialogs they use.
+ * Classes - These classes are used by all the editors to load content (images, audio), Interfaces, and to hold more data.
+ * Components - These components are used by the editors and dialogs.
+ * Dialogs - These dialogs are used by the editors.
+ * Editors - These editors are major part of the whole editor. Contains from Map Editor to Hero Editor and etc.
+ * Help - Contains the About, Feedback and Tutorial forms.
+ * Settings - Contains the Project Settings and Item Settings forms.
+ * View - Contains the explorers such as the Tileset Explorer, the Material Explorer, and etc.
+ */

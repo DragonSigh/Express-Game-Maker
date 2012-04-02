@@ -1,0 +1,7 @@
+﻿/* -----------------------------
+ * Classes
+ * -----------------------------
+ * ContentLoader.cs - Loads XNB content such as Images and Audio.
+ * IEditor.cs - Inherited interface by Editors and used by Memontos to refresh the Editor during Undo/Redo.
+ * ItemTag.cs - Used to store more information in a List Item Collection Ex: ((ItemTag)list.Items[0]).ID.
+ */

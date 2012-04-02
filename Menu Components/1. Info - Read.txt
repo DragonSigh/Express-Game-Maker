@@ -1,0 +1,11 @@
+﻿/* -----------------------------
+ * Menu Components
+ * -----------------------------
+ * MenuEventDialog.cs - Contains the MenuBehaviorProgramListBox.cs
+ * MenuBehaviorProgramListBox.cs - This listbox lists all the commands the user added for the event programming.
+ * MenuConditionsDialog.cs - A program condition dialog for Menus. Enabled, Visible, Selected.
+ * MenuEnableStateDialog.cs - A program dialog that enables or disables a menu part.
+ * MenuHighlightDialog.cs - 
+ * MenuVisibleStateDialog.cs - A program dialog that shows or hides a menu part.
+ * MoveMenuDialog.cs - A program dialog that moves a menu part.
+ */

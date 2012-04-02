@@ -1,0 +1,10 @@
+﻿/* -----------------------------
+ * Event Components
+ * -----------------------------
+ * MapEventDialog.cs - The Map Event Dialog.
+ * ---------------
+ * Components - User Controls for different Event Editors.
+ * Dialogs - Dialogs used by all the Event Editors.
+ * Enemy - The Enemy AI dialog, program Enemy Behavior and Death Behavior. Additional behavior can be programmed using Event Commands.
+ * Program - Contains Event Behavior Programm Commands. The brains of the eventing system.
+ */

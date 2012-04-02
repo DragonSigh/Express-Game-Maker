@@ -1,0 +1,1591 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Application xmlns='http://schemas.microsoft.com/windows/2009/Ribbon'>
+  <Application.Commands>
+
+    <Command Name="cmdApplicationMenu"
+             Id="100" />
+    <Command Name="cmdRecentItems"
+             Id="101"
+             LabelTitle="Recent Projects" />
+    <Command Name="cmdMenuGroupProject"
+             Id="102"
+             LabelTitle="Project Menu">
+    </Command>
+    <Command Name="cmdMenuGroupEGM"
+             Id="103"
+             LabelTitle="EGM Menu">
+    </Command>
+
+    <!--==================Buttons===================-->
+    <!-- Project Actions-->
+    <Command Name="cmdButtonNew"
+         Id="1001"
+         LabelTitle="&amp;New Project"
+         LabelDescription="New Description"
+         TooltipTitle="New Project (Ctrl+N)"
+         TooltipDescription="Creates a new EGM project.">
+
+      <Command.LargeImages>
+        <Image>Res/NewProject32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/NewProject16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonOpen"
+             Id="1002"
+             LabelTitle="Open Project"
+             LabelDescription="Open Description"
+             TooltipTitle="Open Project (Ctrl+O)"
+             TooltipDescription="Open an existing EGM project.">
+      <Command.LargeImages>
+        <Image>Res/OpenProject32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/OpenProject16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonSave"
+             Id="1003"
+             LabelTitle="Save Project"
+             LabelDescription="Save Description"
+             TooltipTitle="Save Project (Ctrl+S)"
+             TooltipDescription="Save the current project.">
+      <Command.LargeImages>
+        <Image>Res/Save32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Save16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <!-- Play -->
+    <Command Name="cmdButtonTest"
+             Id="1004"
+             LabelTitle="Test Game"
+             LabelDescription="Test Description"
+             TooltipTitle="Test Game (F5)"
+             TooltipDescription="Tests the current game.">
+      <Command.LargeImages>
+        <Image>Res/Debug32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Debug16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <!-- Editors -->
+    <Command Name="cmdButtonAnimationEditor"
+             Id="1005"
+             LabelTitle="Animations"
+             LabelDescription="Animations Description"
+             TooltipTitle="Animation Editor"
+             TooltipDescription="Opens the animation editor.">
+      <Command.LargeImages>
+        <Image>Res/AnimationEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/AnimationEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonAudioEditor"
+             Id="1006"
+             LabelTitle="Audios"
+             LabelDescription="Audios Description"
+             TooltipTitle="Audio Editor"
+             TooltipDescription="Opens the audio editor.">
+      <Command.LargeImages>
+        <Image>Res/AudioEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/AudioEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonFontEditor"
+             Id="1007"
+             LabelTitle="Fonts"
+             LabelDescription="Fonts Description"
+             TooltipTitle="Font Editor"
+             TooltipDescription="Opens the font editor.">
+      <Command.LargeImages>
+        <Image>Res/FontEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/FontEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapEditor"
+             Id="1008"
+             LabelTitle="Maps"
+             LabelDescription="Maps Description"
+             TooltipTitle="Map Editor"
+             TooltipDescription="Opens the map editor.">
+      <Command.LargeImages>
+        <Image>Res/MapEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonParticleEditor"
+             Id="1009"
+             LabelTitle="Particles"
+             LabelDescription="Particles Description"
+             TooltipTitle="Particle Editor"
+             TooltipDescription="Opens the particle editor.">
+      <Command.LargeImages>
+        <Image>Res/ParticleEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ParticleEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonSkinEditor"
+             Id="1010"
+             LabelTitle="Skins"
+             LabelDescription="Skins Description"
+             TooltipTitle="Skin Editor"
+             TooltipDescription="Opens the skin editor.">
+      <Command.LargeImages>
+        <Image>Res/SkinEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/SkinEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonTilesetEditor"
+             Id="1011"
+             LabelTitle="Tilesets"
+             LabelDescription="Tilesets Description"
+             TooltipTitle="Tileset Editor"
+             TooltipDescription="Opens the tileset editor.">
+      <Command.LargeImages>
+        <Image>Res/TilesetEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/TilesetEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonComboEditor"
+             Id="1012"
+             LabelTitle="Combos"
+             LabelDescription="Combos Description"
+             TooltipTitle="Combo Editor"
+             TooltipDescription="Opens the combo editor.">
+      <Command.LargeImages>
+        <Image>Res/W_Fist00132.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/W_Fist00116.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonGlobalEventEditor"
+             Id="1013"
+             LabelTitle="Global Events"
+             LabelDescription="Global Events Description"
+             TooltipTitle="Global Event Editor"
+             TooltipDescription="Opens the global event editor.">
+      <Command.LargeImages>
+        <Image>Res/GlobalEventEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/GlobalEventEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonListEditor"
+             Id="1014"
+             LabelTitle="Lists"
+             LabelDescription="Lists Description"
+             TooltipTitle="List Editor"
+             TooltipDescription="Opens the list editor.">
+      <Command.LargeImages>
+        <Image>Res/ListEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ListEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMenuEditor"
+             Id="1015"
+             LabelTitle="Menus"
+             LabelDescription="Menus Description"
+             TooltipTitle="Menu Editor"
+             TooltipDescription="Opens the menu editor.">
+      <Command.LargeImages>
+        <Image>Res/MenuEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MenuEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonPlayerEditor"
+             Id="1016"
+             LabelTitle="Players"
+             LabelDescription="Players Description"
+             TooltipTitle="Player Editor"
+             TooltipDescription="Opens the player editor.">
+      <Command.LargeImages>
+        <Image>Res/PlayerEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/PlayerEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonStringEditor"
+             Id="1017"
+             LabelTitle="Strings"
+             LabelDescription="Strings Description"
+             TooltipTitle="String Editor"
+             TooltipDescription="Opens the string editor.">
+      <Command.LargeImages>
+        <Image>Res/StringEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/StringEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonSwitchesEditor"
+             Id="1018"
+             LabelTitle="Switches"
+             LabelDescription="Switches Description"
+             TooltipTitle="Switches Editor"
+             TooltipDescription="Opens the switches editor.">
+      <Command.LargeImages>
+        <Image>Res/SwitchEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/SwitchEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonTextEditor"
+             Id="1019"
+             LabelTitle="Text"
+             LabelDescription="Text Description"
+             TooltipTitle="Text Editor"
+             TooltipDescription="Opens the text editor.">
+      <Command.LargeImages>
+        <Image>Res/TextEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/TextEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonVariableEditor"
+             Id="1020"
+             LabelTitle="Variables"
+             LabelDescription="Variables Description"
+             TooltipTitle="Variable Editor"
+             TooltipDescription="Opens the variable editor.">
+      <Command.LargeImages>
+        <Image>Res/VariablesEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/VariablesEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonEnemiesEditor"
+             Id="1021"
+             LabelTitle="Enemies"
+             LabelDescription="Enemies Description"
+             TooltipTitle="Enemies Editor"
+             TooltipDescription="Opens the enemies editor.">
+      <Command.LargeImages>
+        <Image>Res/EnemyEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/EnemyEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonEquipmentEditor"
+             Id="1022"
+             LabelTitle="Equipment"
+             LabelDescription="Equipment Description"
+             TooltipTitle="Equipment Editor"
+             TooltipDescription="Opens the equipment editor.">
+      <Command.LargeImages>
+        <Image>Res/EquipmentEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/EquipmentEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonHeroEditor"
+             Id="1023"
+             LabelTitle="Heroes"
+             LabelDescription="Heroes Description"
+             TooltipTitle="Hero Editor"
+             TooltipDescription="Opens the hero editor.">
+      <Command.LargeImages>
+        <Image>Res/HeroEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/HeroEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonItemEditor"
+             Id="1024"
+             LabelTitle="Items"
+             LabelDescription="Items Description"
+             TooltipTitle="Item Editor"
+             TooltipDescription="Opens the item editor.">
+      <Command.LargeImages>
+        <Image>Res/ItemEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ItemEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonProjectileEditor"
+             Id="1025"
+             LabelTitle="Projectiles"
+             LabelDescription="Projectiles Description"
+             TooltipTitle="Projectile Editor"
+             TooltipDescription="Opens the projectile editor.">
+      <Command.LargeImages>
+        <Image>Res/ProjectileEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ProjectileEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonSkillsEditor"
+             Id="1026"
+             LabelTitle="Skills"
+             LabelDescription="Skills Description"
+             TooltipTitle="Skills Editor"
+             TooltipDescription="Opens the skills editor.">
+      <Command.LargeImages>
+        <Image>Res/SkillsEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/SkillsEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonStatesEditor"
+             Id="1027"
+             LabelTitle="States"
+             LabelDescription="States Description"
+             TooltipTitle="States Editor"
+             TooltipDescription="Opens the states editor.">
+      <Command.LargeImages>
+        <Image>Res/S_Poison0632.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/S_Poison0616.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonTemplateEventEditor"
+             Id="1028"
+             LabelTitle="Template Events"
+             LabelDescription="Template Events Description"
+             TooltipTitle="Template Events Editor"
+             TooltipDescription="Opens the template events editor.">
+      <Command.LargeImages>
+        <Image>Res/EventEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/EventEditor16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonProjectSettings"
+             Id="1029"
+             LabelTitle="Project Settings"
+             LabelDescription="Project Settings Description"
+             TooltipTitle="Project Settings"
+             TooltipDescription="Opens the project settings dialog.">
+      <Command.LargeImages>
+        <Image>Res/ProjectSettings32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ProjectSettings16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonUndo"
+             Id="1030"
+             LabelTitle="Undo"
+             LabelDescription="Undo Description"
+             TooltipTitle="Undo (Ctrl+Z)">
+      <Command.LargeImages>
+        <Image>Res/Undo16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Undo16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonRedo"
+             Id="1031"
+             LabelTitle="Redo"
+             LabelDescription="Redo Description"
+             TooltipTitle="Redo (Ctrl+Y)">
+      <Command.LargeImages>
+        <Image>Res/Redo16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Redo16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonCut"
+             Id="1032"
+             LabelTitle="Cut"
+             LabelDescription="Cut Description"
+             TooltipTitle="Cut (Ctrl+X)">
+      <Command.LargeImages>
+        <Image>Res/Cut16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Cut16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonCopy"
+             Id="1033"
+             LabelTitle="Copy"
+             LabelDescription="Copy Description"
+             TooltipTitle="Copy (Ctrl+C)">
+      <Command.LargeImages>
+        <Image>Res/Copy16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Copy16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonPaste"
+             Id="1034"
+             LabelTitle="Paste"
+             LabelDescription="Paste Description"
+             TooltipTitle="Paste (Ctrl+V)">
+      <Command.LargeImages>
+        <Image>Res/Paste16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Paste16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonExport"
+             Id="1080"
+             LabelTitle="Export As Template"
+             LabelDescription="Exports a project as a template."
+             TooltipTitle="Export As TEmplate"
+             TooltipDescription="Exports a project as a template.">
+      <Command.LargeImages>
+        <Image>Res/Settings32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Settings16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonEGMSettings"
+             Id="1035"
+             LabelTitle="EGM Settings"
+             LabelDescription="EGM Settings Description"
+             TooltipTitle="EGM Settings"
+             TooltipDescription="Opens the EGM settings.">
+      <Command.LargeImages>
+        <Image>Res/Settings32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Settings16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonExit"
+   Id="1036"
+   LabelTitle="Exit"
+   LabelDescription="Exit Description"
+   TooltipTitle="Exit">
+      <Command.LargeImages>
+        <Image>Res/Exit32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Exit16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <!-- View-->
+    <Command Name="cmdButtonHomepage"
+             Id="1037"
+             LabelTitle="Homepage"
+             LabelDescription="Homepage Description"
+             TooltipTitle="Homepage"
+             TooltipDescription="Opens the homepage.">
+      <Command.LargeImages>
+        <Image>Res/Homepage32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Homepage16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMaterialExplorer"
+             Id="1038"
+             LabelTitle="Material Explorer"
+             LabelDescription="Material Explorer Description"
+             TooltipTitle="Material Explorer"
+             TooltipDescription="Opens the material explorer.">
+      <Command.LargeImages>
+        <Image>Res/MaterialExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MaterialExplorer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonTilesExplorer"
+             Id="1040"
+             LabelTitle="Tiles Explorer"
+             LabelDescription="Tiles Explorer Description"
+             TooltipTitle="Tiles Explorer"
+             TooltipDescription="Opens the tiles explorer.">
+      <Command.LargeImages>
+        <Image>Res/TilesExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/TilesExplorer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapsExplorer"
+             Id="1041"
+             LabelTitle="Maps Explorer"
+             LabelDescription="Maps Explorer Description"
+             TooltipTitle="Maps Explorer"
+             TooltipDescription="Opens the maps explorer.">
+      <Command.LargeImages>
+        <Image>Res/MapExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapExplorer32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonLayersExplorer"
+             Id="1042"
+             LabelTitle="Layers Explorer"
+             LabelDescription="Layers Explorer Description"
+             TooltipTitle="Layers Explorer"
+             TooltipDescription="Opens the layers explorer.">
+      <Command.LargeImages>
+        <Image>Res/LayersExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/LayersExplorer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapEvents"
+             Id="1043"
+             LabelTitle="Map Events"
+             LabelDescription="Map Events Description"
+             TooltipTitle="Map Events"
+             TooltipDescription="Opens the map events.">
+      <Command.LargeImages>
+        <Image>Res/MapEvents32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapEvents16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonTemplateEvents"
+             Id="1044"
+             LabelTitle="Template Events"
+             LabelDescription="Template Events Description"
+             TooltipTitle="Template Events"
+             TooltipDescription="Opens the template events.">
+      <Command.LargeImages>
+        <Image>Res/TemplateEvents32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/TemplateEvents32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMenuPartsExplorer"
+             Id="1045"
+             LabelTitle="Menu Parts Explorer"
+             LabelDescription="Menu Parts Explorer Description"
+             TooltipTitle="Menu Parts Explorer"
+             TooltipDescription="Opens the menu parts explorer.">
+      <Command.LargeImages>
+        <Image>Res/MenuPartsExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MenuPartsExplorer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMenuPropertyExplorer"
+             Id="1046"
+             LabelTitle="Object Property Explorer"
+             LabelDescription="Object Property Explorer Description"
+             TooltipTitle="Object property Explorer"
+             TooltipDescription="Opens the object property explorer.">
+      <Command.LargeImages>
+        <Image>Res/MenuProperty32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MenuProperty16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonHistoryExplorer"
+             Id="1047"
+             LabelTitle="History Explorer"
+             LabelDescription="History Explorer Description"
+             TooltipTitle="History Explorer"
+             TooltipDescription="Opens the history explorer.">
+      <Command.LargeImages>
+        <Image>Res/HistoryExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/HistoryExplorer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonDatabases"
+             Id="1074"
+             LabelTitle="Databases"
+             LabelDescription="Databases Description"
+             TooltipTitle="Databases"
+             TooltipDescription="Opens an explorer that lists databases.">
+      <Command.LargeImages>
+        <Image>Res/Database32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Database16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonErrorExplorer"
+             Id="1073"
+             LabelTitle="Error Explorer"
+             LabelDescription="Error Explorer Description"
+             TooltipTitle="Error Explorer"
+             TooltipDescription="Opens the error explorer.">
+      <Command.LargeImages>
+        <Image>Res/ErrorExplorer32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ErrorExplorer32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonSourceEditor"
+         Id="1071"
+         LabelTitle="Source"
+         LabelDescription="Edit the engine's source."
+         TooltipTitle="Source"
+         TooltipDescription="Edit the engine's source.">
+      <Command.LargeImages>
+        <Image>Res/SourceEditor32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/SourceEditor32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonResetWorkspace"
+         Id="1072"
+         LabelTitle="Reset Workspace"
+         LabelDescription="Reset the workspace to the way it was loaded."
+         TooltipTitle="Reset Workspace"
+         TooltipDescription="Reset the workspace to the way it was loaded..">
+      <Command.LargeImages>
+        <Image>Res/ResetLayout32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ResetLayout32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <!-- Contextual Tabs -->
+    <Command Name="cmdButtonMapDrawingEraser"
+             Id="1048"
+             TooltipTitle="Eraser Tool (Right Click)">
+      <Command.LargeImages>
+        <Image>Res/MapTab/DrawingEraser16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/DrawingEraser16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapDrawingPencil"
+             Id="1049"
+             TooltipTitle="Pencil Tool">
+      <Command.LargeImages>
+        <Image>Res/MapTab/DrawingPencil16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/DrawingPencil16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapDrawingRectangle"
+             Id="1050"
+             TooltipTitle="Rectangle">
+      <Command.LargeImages>
+        <Image>Res/MapTab/DrawingRectangle16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/DrawingRectangle16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapDrawingFill"
+             Id="1051"
+             TooltipTitle="Fill Tool">
+      <Command.LargeImages>
+        <Image>Res/MapTab/DrawingFill16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/DrawingFill16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapDrawingEraserRect"
+             Id="1075"
+             TooltipTitle="Fill Tool">
+      <Command.LargeImages>
+        <Image>Res/MapTab/layer_select_erase.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/layer_select_erase.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapDrawingEraserFill"
+             Id="1076"
+             TooltipTitle="Fill Tool">
+      <Command.LargeImages>
+        <Image>Res/MapTab/erase_fill.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/erase_fill.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapSelectionPointer"
+             Id="1052"
+             TooltipTitle="Selection Tool">
+      <Command.LargeImages>
+        <Image>Res/MapTab/SelectionPointer16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/SelectionPointer16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapSelectionRectangle"
+             Id="1053"
+             TooltipTitle="Rectangle Selection">
+      <Command.LargeImages>
+        <Image>Res/MapTab/SelectionRectangle16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/SelectionRectangle16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapSelectionSelectAllLayers"
+             Id="1054"
+             TooltipTitle="Select All Layers">
+      <Command.LargeImages>
+        <Image>Res/MapTab/SelectionAllLayers16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/SelectionAllLayers16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapLayerUp"
+             Id="1055"
+             TooltipTitle="Layer Up">
+      <Command.LargeImages>
+        <Image>Res/MapTab/LayerUp16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/LayerUp16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapLayerDown"
+             Id="1056"
+             TooltipTitle="Layer Down">
+      <Command.LargeImages>
+        <Image>Res/MapTab/LayerDown16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/LayerDown16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapMapSize"
+             Id="1058"
+             TooltipTitle="Map Size">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapSize16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapSize16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapGridSize"
+             Id="1059"
+             TooltipTitle="Grid Size">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapGridSize16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapGridSize16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapGravity"
+             Id="1060"
+             TooltipTitle="Gravity">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapGravity16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapGravity16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapEffects"
+             Id="1061"
+             TooltipTitle="Map Effects">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapEffects16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapEffects16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapDimLayers"
+             Id="1062"
+             TooltipTitle="Dim Layers">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapDimLayers16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapDimLayers16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapShowGrid"
+             Id="1063"
+             TooltipTitle="Show Grid">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapShowGrid16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapShowGrid16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapMapSnapToGrid"
+             Id="1064"
+             TooltipTitle="Snap To Grid">
+      <Command.LargeImages>
+        <Image>Res/MapTab/MapSnapToGrid16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/MapSnapToGrid16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapMapShowCollision"
+             Id="10642"
+             TooltipTitle="Show Collision Grid">
+      <Command.LargeImages>
+        <Image>Res/MapTab/layerGeomShape.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/layerGeomShape.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapOtherAddMap"
+             Id="1065"
+             TooltipTitle="Add Map">
+      <Command.LargeImages>
+        <Image>Res/MapTab/OtherAddMap16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/OtherAddMap16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonMapOtherEvents"
+             Id="1066"
+             TooltipTitle="Enable Event Selection">
+      <Command.LargeImages>
+        <Image>Res/MapTab/OtherEvents16.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/OtherEvents16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonMapOtherLayers"
+             Id="1077"
+             TooltipTitle="Enable Layer Selection">
+      <Command.LargeImages>
+        <Image>Res/MapTab/transform_selection.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/MapTab/transform_selection.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonItemSettings"
+             Id="1067"
+             LabelTitle="Item Settings"
+             TooltipTitle="Item Settings"
+             TooltipDescription="Opens the item settings dialog.">
+      <Command.LargeImages>
+        <Image>Res/ItemSettings32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/ItemSettings16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonDatabase"
+             Id="1068"
+             LabelTitle="Database"
+             TooltipTitle="Database Editor"
+             TooltipDescription="Opens the database editor.">
+      <Command.LargeImages>
+        <Image>Res/Database32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Database16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonTutorials"
+             Id="1069"
+             LabelTitle="Tutorials"
+             TooltipTitle="Tutorial Explorer"
+             TooltipDescription="Opens the tutorial explorer.">
+      <Command.LargeImages>
+        <Image>Res/Tutorials32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Tutorials32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonSurvey"
+             Id="1081"
+             LabelTitle="Feedback"
+             TooltipTitle="Feedback"
+             TooltipDescription="Give us your feedback!">
+      <Command.LargeImages>
+        <Image>Res/Feedback32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/Feedback16.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+
+    <Command Name="cmdButtonAbout"
+             Id="1070"
+             LabelTitle="About"
+             TooltipTitle="About"
+             TooltipDescription="">
+      <Command.LargeImages>
+        <Image>Res/About32.bmp</Image>
+      </Command.LargeImages>
+      <Command.SmallImages>
+        <Image>Res/About32.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+
+    <!--//==================Buttons===================//-->
+
+    <!--==================Tabs===================-->
+    <Command Name="cmdTabMain"
+             Id="1101"
+             LabelTitle="Main">
+    </Command>
+    <Command Name="cmdTabView"
+             Id="1102"
+             LabelTitle="View">
+    </Command>
+    <Command Name="cmdTabRelease"
+             Id="1103"
+             LabelTitle="Release">
+    </Command>
+    <Command Name="cmdTabHelp"
+             Id="1104"
+             LabelTitle="Help">
+    </Command>
+    <!--//==================Tabs===================//-->
+
+    <!--==================Groups===================-->
+    <!-- Main -->
+    <Command Name="cmdGroupProjectActions"
+             Id="1201"
+             LabelTitle="Project">
+    </Command>
+    <Command Name="cmdGroupPlay"
+             Id="1202">
+    </Command>
+    <Command Name="cmdGroupEditorsContent"
+             Id="1203"
+             LabelTitle="Content">
+    </Command>
+    <Command Name="cmdGroupEditorsEffects"
+             Id="1204"
+             LabelTitle="Effetcs">
+    </Command>
+    <Command Name="cmdGroupEditorsMenu"
+             Id="1205"
+             LabelTitle="Menu">
+    </Command>
+    <Command Name="cmdGroupEditorsMap"
+             Id="1206"
+             LabelTitle="Map">
+    </Command>
+    <Command Name="cmdGroupEditorsData"
+             Id="1207"
+             LabelTitle="Data">
+    </Command>
+    <Command Name="cmdGroupEditorsEvent"
+             Id="1208"
+             LabelTitle="Event">
+    </Command>
+    <Command Name="cmdGroupEditorsGame"
+             Id="1209"
+             LabelTitle="Game">
+    </Command>
+    <Command Name="cmdGroupCommonActions"
+             Id="1210">
+    </Command>
+    <!-- View -->
+    <Command Name="cmdGroupHomepage"
+             Id="1211">
+    </Command>
+    <Command Name="cmdGroupMaterials"
+             Id="1212">
+    </Command>
+    <Command Name="cmdGroupMap"
+             Id="1213">
+    </Command>
+    <Command Name="cmdGroupMenu"
+             Id="1214">
+    </Command>
+    <Command Name="cmdGroupHistory"
+             Id="1215">
+    </Command>
+    <!-- Map Contextual Tab -->
+    <Command Name="cmdGroupMapDrawing"
+             Id="1216"
+             LabelTitle="Drawing Tools">
+    </Command>
+    <Command Name="cmdGroupMapSelection"
+             Id="1217"
+             LabelTitle="Selection Tools">
+    </Command>
+    <Command Name="cmdGroupMapCollision"
+             Id="1227"
+             LabelTitle="Collision Tools">
+    </Command>
+    <Command Name="cmdGroupMapLayer"
+             Id="1218"
+             LabelTitle="Layer Tools">
+    </Command>
+    <Command Name="cmdGroupMapMap"
+             Id="1219"
+             LabelTitle="Map Settings">
+    </Command>
+    <Command Name="cmdGroupMapOther"
+             Id="1220"
+             LabelTitle="Other">
+    </Command>
+    <!-- Database -->
+    <Command Name="cmdGroupDatabase"
+             Id="1221">
+    </Command>
+    <!-- Help Tab -->
+    <Command Name="cmdGroupSurveys"
+             Id="1226">
+    </Command>
+    <Command Name="cmdGroupTutorials"
+             Id="1222">
+    </Command>
+    <Command Name="cmdGroupAbout"
+             Id="1223">
+    </Command>
+
+    <Command Name="cmdGroupSource"
+             Id="1224">
+    </Command>
+
+    <Command Name="cmdGroupReset"
+             Id="1225">
+    </Command>
+    <!--//==================Groups===================//-->
+
+    <!--==================Quick Access Toolbar===================-->
+    <Command Name="cmdQAT"
+             Id="1301">
+    </Command>
+    <Command Name="cmdCustomizeQAT"
+             Id="1302">
+    </Command>
+    <!--//==================Quick Access Toolbar===================//-->
+
+    <!--================= Contextual Tabs ======================-->
+    <Command Name="cmdTabGroupMapEditor"
+             LabelTitle="Map"
+             Id="1401">
+    </Command>
+    <Command Name="cmdTabGroupAnimationEditor"
+             LabelTitle="Animation"
+             Id="1402">
+    </Command>
+    <Command Name="cmdContextualTabMapEditor"
+             LabelTitle="Tools"
+             Id="1403">
+    </Command>
+    <Command Name="cmdContextualTabAnimationEditor"
+             LabelTitle="Tools"
+             Id="1404">
+    </Command>
+    <!--// ================= Contextual Tabs ======================// -->
+  </Application.Commands>
+
+  <Application.Views>
+    <Ribbon>
+
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar CommandName='cmdQAT' CustomizeCommandName='cmdCustomizeQAT'>
+          <QuickAccessToolbar.ApplicationDefaults>
+            <Button CommandName="cmdButtonNew" ApplicationDefaults.IsChecked="true" />
+            <Button CommandName="cmdButtonOpen" ApplicationDefaults.IsChecked="true" />
+            <Button CommandName="cmdButtonProjectSettings" ApplicationDefaults.IsChecked="false" />
+            <Button CommandName="cmdButtonSave" ApplicationDefaults.IsChecked="true" />
+            <Button CommandName="cmdButtonUndo" ApplicationDefaults.IsChecked="true" />
+            <Button CommandName="cmdButtonRedo" ApplicationDefaults.IsChecked="true" />
+            <Button CommandName="cmdButtonTest" ApplicationDefaults.IsChecked="true" />
+          </QuickAccessToolbar.ApplicationDefaults>
+        </QuickAccessToolbar>
+      </Ribbon.QuickAccessToolbar>
+
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdApplicationMenu">
+          <ApplicationMenu.RecentItems>
+            <RecentItems CommandName="cmdRecentItems" EnablePinning="true" MaxCount="7" />
+          </ApplicationMenu.RecentItems>
+          <MenuGroup CommandName="cmdMenuGroupProject">
+            <Button CommandName='cmdButtonNew' />
+            <Button CommandName='cmdButtonOpen' />
+            <Button CommandName='cmdButtonSave' />
+            <Button CommandName='cmdButtonProjectSettings' />
+            <Button CommandName='cmdButtonExport' />
+          </MenuGroup>
+          <MenuGroup CommandName='cmdMenuGroupEGM'>
+            <Button CommandName='cmdButtonEGMSettings' />
+          </MenuGroup>
+          <MenuGroup></MenuGroup>
+          <MenuGroup>
+            <Button CommandName='cmdButtonExit' />
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabMain">
+          <Group CommandName="cmdGroupProjectActions" SizeDefinition="ThreeSmallOneLarge">
+            <Button CommandName="cmdButtonNew" />
+            <Button CommandName="cmdButtonOpen" />
+            <Button CommandName="cmdButtonProjectSettings" />
+            <Button CommandName="cmdButtonSave" />
+          </Group>
+          <!--
+          <Group CommandName="cmdGroupCommonActions" SizeDefinition="CommonActionsLayout">
+            <Button CommandName="cmdButtonUndo" />
+            <Button CommandName="cmdButtonRedo" />
+            <Button CommandName="cmdButtonCut" />
+            <Button CommandName="cmdButtonCopy" />
+            <Button CommandName="cmdButtonPaste" />
+          </Group>
+          -->
+          <Group CommandName="cmdGroupPlay" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonTest" />
+          </Group>
+          <Group CommandName="cmdGroupDatabase" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonDatabase" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsGame" SizeDefinition="NineMedium">
+            <Button CommandName="cmdButtonHeroEditor" />
+            <Button CommandName="cmdButtonEnemiesEditor" />
+            <Button CommandName="cmdButtonItemEditor" />
+            <Button CommandName="cmdButtonEquipmentEditor" />
+            <Button CommandName="cmdButtonProjectileEditor" />
+            <Button CommandName="cmdButtonSkillsEditor" />
+            <Button CommandName="cmdButtonStatesEditor" />
+            <Button CommandName="cmdButtonComboEditor" />
+            <Button CommandName="cmdButtonItemSettings" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsMap" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdButtonMapEditor" />
+            <Button CommandName="cmdButtonTilesetEditor" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsContent" SizeDefinition="FourButtons">
+            <Button CommandName="cmdButtonAnimationEditor" />
+            <Button CommandName="cmdButtonAudioEditor" />
+            <Button CommandName="cmdButtonFontEditor" />
+            <Button CommandName="cmdButtonTextEditor" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsEffects" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonParticleEditor" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsEvent" SizeDefinition="ThreeButtons">
+            <Button CommandName="cmdButtonPlayerEditor" />
+            <Button CommandName="cmdButtonGlobalEventEditor" />
+            <Button CommandName="cmdButtonTemplateEventEditor" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsData" SizeDefinition="OneLargeThreeMedium">
+            <Button CommandName="cmdButtonVariableEditor" />
+            <Button CommandName="cmdButtonSwitchesEditor" />
+            <Button CommandName="cmdButtonStringEditor" />
+            <Button CommandName="cmdButtonListEditor" />
+          </Group>
+          <Group CommandName="cmdGroupEditorsMenu" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdButtonSkinEditor" />
+            <Button CommandName="cmdButtonMenuEditor" />
+          </Group>
+        </Tab>
+        <Tab CommandName="cmdTabView">
+          <Group CommandName="cmdGroupHomepage" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonHomepage" />
+          </Group>
+          <Group CommandName="cmdGroupMaterials" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonMaterialExplorer" />
+          </Group>
+          <Group CommandName="cmdGroupMap" SizeDefinition="SixButtons">
+            <Button CommandName="cmdButtonTilesExplorer" />
+            <Button CommandName="cmdButtonMapsExplorer" />
+            <Button CommandName="cmdButtonLayersExplorer" />
+            <Button CommandName="cmdButtonMapEvents" />
+            <Button CommandName="cmdButtonTemplateEvents" />
+            <Button CommandName="cmdButtonDatabases" />
+          </Group>
+          <Group CommandName="cmdGroupMenu" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdButtonMenuPartsExplorer" />
+            <Button CommandName="cmdButtonMenuPropertyExplorer" />
+          </Group>
+          <Group CommandName="cmdGroupSource" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonSourceEditor" />
+          </Group>
+          <Group CommandName="cmdGroupHistory" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdButtonHistoryExplorer" />
+            <Button CommandName="cmdButtonErrorExplorer" />
+          </Group>
+          <Group CommandName="cmdGroupReset" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonResetWorkspace" />
+          </Group>
+        </Tab>
+        <Tab CommandName="cmdTabRelease">
+        </Tab>
+        <Tab CommandName="cmdTabHelp">
+          <Group CommandName="cmdGroupSurveys" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonSurvey" />
+          </Group>
+          <Group CommandName="cmdGroupTutorials" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonTutorials" />
+          </Group>
+          <Group CommandName="cmdGroupAbout" SizeDefinition="OneButton">
+            <Button CommandName="cmdButtonAbout" />
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+
+      <Ribbon.ContextualTabs>
+        <TabGroup CommandName="cmdTabGroupMapEditor">
+          <Tab CommandName="cmdContextualTabMapEditor">
+            <Group CommandName="cmdGroupMapMap" SizeDefinition="NineSmall">
+              <Button CommandName="cmdButtonMapOtherAddMap"/>
+              <Button CommandName="cmdButtonMapMapSize"/>
+              <Button CommandName="cmdButtonMapMapGridSize"/>
+              <Button CommandName="cmdButtonMapMapGravity"/>
+              <Button CommandName="cmdButtonMapMapEffects"/>
+              <ToggleButton CommandName="cmdButtonMapMapDimLayers"/>
+              <ToggleButton CommandName="cmdButtonMapMapShowGrid"/>
+              <ToggleButton CommandName="cmdButtonMapMapSnapToGrid"/>
+              <ToggleButton CommandName="cmdButtonMapMapShowCollision"/>
+            </Group>
+            <Group CommandName="cmdGroupMapDrawing" SizeDefinition="DrawingTools">
+              <ToggleButton CommandName="cmdButtonMapDrawingEraser"/>
+              <ToggleButton CommandName="cmdButtonMapDrawingPencil"/>
+              <ToggleButton CommandName="cmdButtonMapDrawingRectangle"/>
+              <ToggleButton CommandName="cmdButtonMapDrawingFill"/>
+              <ToggleButton CommandName="cmdButtonMapDrawingEraserRect"/>
+              <ToggleButton CommandName="cmdButtonMapDrawingEraserFill"/>
+            </Group>
+            <Group CommandName="cmdGroupMapSelection" SizeDefinition="FiveSmall">
+              <ToggleButton CommandName="cmdButtonMapSelectionPointer"/>
+              <ToggleButton CommandName="cmdButtonMapSelectionRectangle"/>
+              <ToggleButton CommandName="cmdButtonMapSelectionSelectAllLayers"/>
+              <ToggleButton CommandName="cmdButtonMapOtherEvents"/>
+              <ToggleButton CommandName="cmdButtonMapOtherLayers"/>
+            </Group>
+          </Tab>
+        </TabGroup>
+        <TabGroup CommandName="cmdTabGroupAnimationEditor">
+          <Tab CommandName="cmdContextualTabAnimationEditor">
+
+          </Tab>
+        </TabGroup>
+      </Ribbon.ContextualTabs>
+
+      <Ribbon.SizeDefinitions>
+        <SizeDefinition Name="ThreeSmallOneLarge">
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Large" IsLabelVisible="true" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Medium">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Small">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="OneLargeThreeMedium">
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Large" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Medium">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Small">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="NineMedium">
+          <GroupSizeDefinition Size="Large">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="true" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Medium">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+          </GroupSizeDefinition>
+          <GroupSizeDefinition Size="Small">
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+            <ControlSizeDefinition ImageSize="Small" IsLabelVisible="false" />
+          </GroupSizeDefinition>
+        </SizeDefinition>
+
+        <SizeDefinition Name="CommonActionsLayout">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+            <ControlNameDefinition Name="button5" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button5" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="FourSmall">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="FiveSmall">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+            <ControlNameDefinition Name="button5" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+              </ControlGroup>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button5" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="DrawingTools">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+            <ControlNameDefinition Name="button5" />
+            <ControlNameDefinition Name="button6" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button5" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button6" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="ThreeSmall">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name= "NineSmall">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+            <ControlNameDefinition Name="button5" />
+            <ControlNameDefinition Name="button6" />
+            <ControlNameDefinition Name="button7" />
+            <ControlNameDefinition Name="button8" />
+            <ControlNameDefinition Name="button9" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+              </ControlGroup>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button5" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button6" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button7" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button8" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button9" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name= "NineSmall2">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+            <ControlNameDefinition Name="button3" />
+            <ControlNameDefinition Name="button4" />
+            <ControlNameDefinition Name="button5" />
+            <ControlNameDefinition Name="button6" />
+            <ControlNameDefinition Name="button7" />
+            <ControlNameDefinition Name="button8" />
+            <ControlNameDefinition Name="button9" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button3" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button4" IsLabelVisible="false" />
+              </ControlGroup>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button5" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button6" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button7" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button8" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button9" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+        <SizeDefinition Name="TwoSmall">
+          <ControlNameMap>
+            <ControlNameDefinition Name="button1" />
+            <ControlNameDefinition Name="button2" />
+          </ControlNameMap>
+          <GroupSizeDefinition Size="Large">
+            <Row>
+              <ControlGroup>
+                <ControlSizeDefinition ControlName="button1" IsLabelVisible="false" />
+                <ControlSizeDefinition ControlName="button2" IsLabelVisible="false" />
+              </ControlGroup>
+            </Row>
+          </GroupSizeDefinition>
+        </SizeDefinition>
+      </Ribbon.SizeDefinitions>
+
+    </Ribbon>
+  </Application.Views>
+
+</Application>
