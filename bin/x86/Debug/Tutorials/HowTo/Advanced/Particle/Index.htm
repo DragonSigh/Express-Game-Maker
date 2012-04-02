@@ -1,0 +1,243 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Express Game Maker - Tutorials</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	    <h1>&nbsp;</h1>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Particle System<o:p></o:p></b></p>
+        <p class="MsoNormal">
+            Particles are usually used for <b style="mso-bidi-font-weight:
+normal">fluid animations</b> such as fire, smoke, explosions, magic, blood and etc. What 
+            makes our particle system great is <b style="mso-bidi-font-weight:
+normal">multiple emitters</b> and <b style="mso-bidi-font-weight:normal">robust settings</b>.
+            <span style="mso-spacerun:yes">&nbsp;</span></p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Note:</b> This is an advanced feature.</p>
+        <p class="MsoNormal">
+            In order to use the particle system, you’ll need some graphics, mainly 
+            “001-Explosion” and “002-Smoke” for this tutorial. You can find the images in 
+            either in RPG template, shooter template, or the RPG package.
+        </p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Open</b> the Particle editor <img src="particles.PNG" />. Add a new 
+            particle system, call this <b style="mso-bidi-font-weight:normal">Fire</b>.</p>
+        <p class="MsoNormal">
+            Our fire will have two components, flames and smoke.</p>
+        <p class="MsoNormal">
+            Add a new particle emitter and call this <b style="mso-bidi-font-weight:normal">
+            Flames</b>.
+        </p>
+        <p class="MsoNormal">
+            Click <b style="mso-bidi-font-weight:normal">Select Images </b>and select 
+            “001-Explosion”.<i style="mso-bidi-font-style:normal"> </i>You can select more 
+            than one image by holding down the shift or control keys, but for now, we’ll 
+            select just one. Click <b style="mso-bidi-font-weight:normal">OK</b> and you 
+            will see the image in the <b style="mso-bidi-font-weight:normal">Particle Viewer</b>.</p>
+        <p class="MsoNormal">
+            As the image is on a black background, we need to change the blending options of 
+            the image, from the default <b style="mso-bidi-font-weight:
+normal">Alpha Blend</b> to <b style="mso-bidi-font-weight:normal">Additive</b>.</p>
+        <p class="MsoNormal">
+            We now need to adjust the settings in order to create a life-like flame effect. 
+            First of all, change the <b style="mso-bidi-font-weight:normal">Scale</b> base 
+            property to a small value, around <b style="mso-bidi-font-weight:normal">0.2</b>.<span 
+                style="mso-no-proof:yes">
+            <img src="scale.PNG" /></span></p>
+        <p class="MsoNormal">
+            Now, to give the particles the upwards motion, we need to set the
+            <b style="mso-bidi-font-weight:normal">Initial Angle</b> and the
+            <b style="mso-bidi-font-weight:normal">Initial Velocity</b>, which will cause 
+            the particles to move at the given speed at the given angle.
+            <b style="mso-bidi-font-weight:
+normal">270</b> for the angle and <b style="mso-bidi-font-weight:normal">100</b> for the 
+            velocity should be sufficient.
+        </p>
+        <p class="MsoNormal">
+            <span 
+                style="mso-no-proof:yes"><img src="angle.PNG" /></span><b style="mso-bidi-font-weight:
+normal">Note:</b> you can visually adjust the angle by using the dial control to the left of 
+            the angle text.<span style="mso-ansi-language:EN-GB;mso-fareast-language:
+JA;mso-no-proof:yes"> </span>
+        </p>
+        <p class="MsoNormal">
+            <img src="offset.PNG" style="float:left;" />In order to make the particles look organic, we need to add
+            <b style="mso-bidi-font-weight:normal">random behaviors</b> to the particles, 
+            and this is done with the <b style="mso-bidi-font-weight:normal">Offset</b> 
+            options. The <b style="mso-bidi-font-weight:normal">offset </b>number box will 
+            specify values above and below the initial value and randomly choose a value 
+            between the new maximum and minimum.
+        </p>
+        <p class="MsoNormal">
+            A practical example will best demonstrate this. Set the
+            <b style="mso-bidi-font-weight:normal">Initial</b>
+            <b style="mso-bidi-font-weight:
+normal">Angle Offset</b> to <b style="mso-bidi-font-weight:normal">15</b>. This will then 
+            mean that the <b style="mso-bidi-font-weight:normal">Initial Angle </b>could be 
+            any value <b style="mso-bidi-font-weight:normal">between 255 and 285</b>. In 
+            doing this you will see the fire appear to spread out.</p>
+        <p class="MsoNormal">
+            A problem now is that all the flames have a fixed end-point.
+            <span style="mso-spacerun:yes">&nbsp;</span>This looks very inorganic. In order to 
+            change this, the <b style="mso-bidi-font-weight:normal">Life Time</b> setting 
+            comes into play. The default base value of 30 is probably okay for this example, 
+            but in order to add randomness, we again adjust the
+            <b style="mso-bidi-font-weight:normal">Offset</b> property. A value of around
+            <b style="mso-bidi-font-weight:normal">8</b> gives a nice natural flicker to the 
+            flames.</p>
+        <p class="MsoNormal">
+            Now I will introduce the concept of <b style="mso-bidi-font-weight:
+normal">Increase properties</b>. This value, as the name suggests, increases or decreases 
+            the base value of the property as it undergoes its lifetime. Again, a practical 
+            example is probably best to show this. To make the fire look more convincing, we 
+            want to make the flames fade out and shrink as they get further from the source 
+            (or they get <b style="mso-bidi-font-weight:normal">older</b>).</p>
+        <p class="MsoNormal">
+            <span style="mso-spacerun:yes">&nbsp;</span>In order to do this, we set a
+            <b style="mso-bidi-font-weight:normal">negative</b> value of increase for the
+            <b style="mso-bidi-font-weight:normal">Scale </b>property. About
+            <b style="mso-bidi-font-weight:normal">-2.00</b> produces a good effect.
+        </p>
+        <p class="MsoNormal">
+            We can do the same for the <b style="mso-bidi-font-weight:
+normal">Opacity </b>value, as well as setting an <b style="mso-bidi-font-weight:
+normal">offset </b>for it, a <b style="mso-bidi-font-weight:normal">base </b>of
+            <b style="mso-bidi-font-weight:normal">255</b> with an
+            <b style="mso-bidi-font-weight:
+normal">offset </b>of <b style="mso-bidi-font-weight:normal">100 </b>and an
+            <b style="mso-bidi-font-weight:normal">increase</b> of
+            <b style="mso-bidi-font-weight:
+normal">-1.5</b> looks good.</p>
+        <p class="MsoNormal">
+            You should now have something that looks similar to this:
+        </p>
+        <p class="MsoNormal">
+            <img src="fire.PNG" /></p>
+        <p class="MsoNormal">
+            As a base for flames, this is not bad, but we can further improve it by 
+            adjusting the <b style="mso-bidi-font-weight:normal">Max Particles</b> and the
+            <b style="mso-bidi-font-weight:normal">Particles to Emit</b>.</p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Note: </b>These values have a direct 
+            impact on the performance of your game, the more particles; the more processing 
+            they require; the slower your game will run. Monitor the
+            <b style="mso-bidi-font-weight:normal">FPS</b> and
+            <b style="mso-bidi-font-weight:normal">Particles</b> count in the
+            <b style="mso-bidi-font-weight:normal">Particle Viewer.</b><span style="mso-no-proof:
+yes">
+            <img height="22" 
+                src="file:///C:/Users/Momo/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" 
+                v:shapes="Picture_x0020_14" width="133" /><![endif]></span><b style="mso-bidi-font-weight:
+normal"><o:p></o:p></b></p>
+        <p class="MsoNormal">
+            Setting the <b style="mso-bidi-font-weight:normal">Max Particles</b> to
+            <b style="mso-bidi-font-weight:normal">100 </b>and the
+            <b style="mso-bidi-font-weight:normal">Particles to Emit</b> to
+            <b style="mso-bidi-font-weight:normal">3 </b>seems to give the fire the 
+            thickness it requires.</p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Some further additions:</b> Adjust the 
+            settings to however you see fit, but here are some example additional values:
+            <b style="mso-bidi-font-weight:normal">Scale Offset: 0.05</b>,
+            <b style="mso-bidi-font-weight:normal">Rotation Offset: 180.<o:p></o:p></b></p>
+        <p class="MsoNormal">
+            Example final settings:</p>
+        <p class="MsoNormal">
+            <img src="finalsettings.PNG" /></p>
+        <p class="MsoNormal">
+            Now the flames have been created and you understand how the different values 
+            work in relation to how they affect the particles, we shall add the smoke.</p>
+        <p class="MsoNormal">
+            In the <b style="mso-bidi-font-weight:normal">Emitters </b>pane,
+            <b style="mso-bidi-font-weight:normal">Add</b> a new emitter and rename it to
+            <b style="mso-bidi-font-weight:normal">Smoke</b>.</p>
+        <p class="MsoNormal">
+            Like before, click <b style="mso-bidi-font-weight:normal">Select Images</b> and 
+            this time choose “002-Smoke”. You will see the smoke then appears in front of 
+            the flames, so we have to go to the <b style="mso-bidi-font-weight:
+normal">Emitters</b> pane, and while the <b style="mso-bidi-font-weight:normal">Smoke </b>
+            <span style="mso-fareast-language:JA;mso-no-proof:yes">emitter is selected,
+            </span>click on the <b style="mso-bidi-font-weight:normal">Up</b> arrow<span 
+                style="mso-ansi-language:EN-GB;mso-fareast-language:JA;mso-no-proof:yes">
+            </span>
+            <img src="up.PNG" />.</p>
+        <p class="MsoNormal">
+            We have to now apply similar settings to the smoke, and as you know how the 
+            majority of the parameters now work some of this will be a brief overview.</p>
+        <p class="MsoNormal">
+            Set the <b style="mso-bidi-font-weight:normal">scale</b> to
+            <b style="mso-bidi-font-weight:normal">0.2</b>, the
+            <b style="mso-bidi-font-weight:
+normal">Max Particles</b> to <b style="mso-bidi-font-weight:normal">200</b>, the
+            <b style="mso-bidi-font-weight:normal">Initial Angle</b> to
+            <b style="mso-bidi-font-weight:normal">270</b>, the
+            <b style="mso-bidi-font-weight:
+normal">Initial Velocity</b> to <b style="mso-bidi-font-weight:normal">120, </b>and the
+            <b style="mso-bidi-font-weight:normal">Life Time</b> to
+            <b style="mso-bidi-font-weight:normal">55. </b>This then sets up the base for 
+            the smoke.</p>
+        <p class="MsoNormal">
+            You will notice now how the smoke now slightly overlaps the flames, which is not 
+            what we want, and we can account for this by adjusting the
+            <b style="mso-bidi-font-weight:normal">Start Point</b> for the emitter.
+        </p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">Important:</b> The start points for the 
+            Emitters are all <b style="mso-bidi-font-weight:normal">relative to the</b>
+            <b style="mso-bidi-font-weight:normal">central position of the particle system</b> 
+            (where the two guide lines meet in the center).</p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">When adjusting the position:</b> Note the 
+            relative position which is shown in the coordinates at the bottom of the
+            <b style="mso-bidi-font-weight:normal">Particle Viewer</b>.<a name="_GoBack"></a></p>
+        <p class="MsoNormal">
+            <span style="mso-ansi-language:EN-GB;mso-fareast-language:
+JA;mso-no-proof:yes"><span style="mso-spacerun:yes">&nbsp;</span></span><span 
+                style="mso-no-proof:yes">
+            <img src="positio.PNG" /></span></p>
+        <p class="MsoNormal">
+            Click <b style="mso-bidi-font-weight:normal">Select Start Point. </b>You will 
+            see it becomes selected.
+            <img src="selectStart.PNG" /></p>
+        <p class="MsoNormal">
+            You can click it again to deselect it.
+        </p>
+        <p class="MsoNormal">
+            Now, when you move your mouse into the <b style="mso-bidi-font-weight:
+normal">Particle Viewer</b> area, you will see the <b style="mso-bidi-font-weight:
+normal">Start Point</b> of the emitter follows your mouse. Look at the coordinates and wait 
+            until it becomes <b style="mso-bidi-font-weight:normal">(-5, 15)</b> which is a 
+            value that works well with this image. <b style="mso-bidi-font-weight:
+normal">Click at the desired location to set it.</b> This will deselect the
+            <b style="mso-bidi-font-weight:normal">select start point </b>button and commit 
+            the change.</p>
+        <p class="MsoNormal">
+            Your particle system should now look something like this:</p>
+        <p class="MsoNormal">
+            <img src="fire2.PNG" /></p>
+        <p class="MsoNormal">
+            Now we can add some variation by changing the
+            <b style="mso-bidi-font-weight:normal">Initial Angle Offset</b> to
+            <b style="mso-bidi-font-weight:normal">15</b>, the
+            <b style="mso-bidi-font-weight:
+normal">Opacity Increase</b> to <b style="mso-bidi-font-weight:normal">-2.5</b> and the
+            <b style="mso-bidi-font-weight:normal">Scale Offset</b> to
+            <b style="mso-bidi-font-weight:normal">0.05</b>.</p>
+        <p class="MsoNormal">
+            Resulting in this image:
+        </p>
+        <p class="MsoNormal">            
+            <img src="fire3.PNG" /></p>
+        <p class="MsoNormal">
+            Congratulations, you have created your first particle system using Express Game 
+            Maker!
+        </p>
+        <p class="MsoNormal">
+            <b style="mso-bidi-font-weight:normal">The best way to learn</b> how to make 
+            good effects is to just <b style="mso-bidi-font-weight:normal">play around with 
+            settings!</b></p>
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Express Game Maker - Tutorials</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h2>Menu</h2>
+    <p class="MsoNormal">
+        Menus in video games are used for <b style="mso-bidi-font-weight: normal">several purposes</b>
+        such as a Title menu, Options menu, or Heads-up Displays.</p>
+    <p class="MsoNormal">
+        For this tutorial, we will make a Title menu and explore the basics of the menu
+        maker and how it works. For more advanced tutorials on the Menu maker, see different
+        Menu tutorials.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">First</b>, make sure you have imported and
+        added your menu skin. If you do not know how, read the Skin tutorial. You don’t
+        need a skin but it will definitely look better. You’ll <b style="mso-bidi-font-weight: normal">
+            also </b>need a Font.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Open</b> the Menu editor
+        <img src="menu.PNG" />. You’ll also need
+        <img src="menuparts.PNG" />
+        and
+        <img src="menuproperty.PNG" />. Setup the windows anyway you like.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Add</b> a new menu and rename it to “Title
+        Menu.” Go to the <b style="mso-bidi-font-weight: normal">Project Settings</b> and
+        select your initial scene as Menu and select the “Title Menu.” Press OK and close
+        it.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Menu Property</b> explorer contains <b style="mso-bidi-font-weight: normal">
+            settings</b> for the menu and menu parts. Click on the blank space where the
+        menu parts will be and the menu property should contain settings for the menu. Make
+        the “<b style="mso-bidi-font-weight: normal">Default Skin</b>” the skin you would
+        like to use. <b style="mso-bidi-font-weight: normal">Although</b> you can have <b
+            style="mso-bidi-font-weight: normal">different</b> skins for different menu
+        parts, this will auto-set the skin for your newly added menu parts and save you
+        time.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Menu Parts</b> explorer <b style="mso-bidi-font-weight: normal">
+            contains </b>menu parts from Windows to Dynamic Bars to Lists. <span style="mso-spacerun: yes">
+                &nbsp;</span>For this tutorial, we’ll use just the Static &gt; List part.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Drag and drop</b> the
+        <img src="list.PNG" /><span style="mso-spacerun: yes">&nbsp;</span>part from the
+        menu parts explorer to the menu editor. Resize it and reposition it to where you
+        like.</p>
+    <p class="MsoNormal">
+        While the Window is selected, open the property explorer and open “<b style="mso-bidi-font-weight: normal">Options</b>.”
+        Add 3 new options and select the first.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Scroll down</b> to see the following settings.</p>
+    <p class="MsoNormal">
+        <img src="optionproperty.PNG" /></p>
+    <p class="MsoNormal">
+        This will allow you to rename and pick the font of the option. <b style="mso-bidi-font-weight: normal">
+            Each</b> option can have its own Font, Style, Text, and Color. Make sure to
+        pick a color that is visible on the skin. Pick the Font and Style you would like
+        to use. <b style="mso-bidi-font-weight: normal">For Text</b>, the first option write
+        “Start Game”, the next “Continue”, and for the third “Exit Game”.</p>
+    <p class="MsoNormal">
+        Now that we have our options, we’ll need a way to know which option is selected.
+        Add a new <b style="mso-bidi-font-weight: normal">variable</b> and rename it “Title
+        Index.” While the list is selected, fine the Variable property. <img src="titleindex.PNG" /></p>
+    <p class="MsoNormal">
+        Set it to “Title Index”.</p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal">Events</b> are not only used by the map
+        but also by the menu. For Menus, you have pre-set event conditions such as OnConfirm,
+        OnCancel, OnShow and etc. They are all <b style="mso-bidi-font-weight: normal">listed
+            under</b> the <b style="mso-bidi-font-weight: normal">Event </b>category of
+        the properties of a menu part. For this tutorial, we will use <b style="mso-bidi-font-weight: normal">
+            OnConfirm</b> and <b style="mso-bidi-font-weight: normal">OnSelectedIndex</b>.</p>
+    <p class="MsoNormal">
+        Open the <b style="mso-bidi-font-weight: normal">OnSelectedIndex</b> event and add
+        a new “Play Audio” command. Select an index change sound effect and Channel 3, the
+        channel that should be used only for general sound effects.
+    </p>
+    <p class="MsoNormal">
+        <img src="onconfirm.PNG" /></p>
+    <p class="MsoNormal">
+        Press <b style="mso-bidi-font-weight: normal">OK</b> and open <b style="mso-bidi-font-weight: normal">
+            OnConfirm</b> event.<span style="mso-no-proof: yes">
+                <o:p></o:p>
+            </span>
+    </p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal"><span style="mso-no-proof: yes">First</span></b><span
+            style="mso-no-proof: yes">, let’s add an audio to let the player know he pressed
+            confirm.<span style="mso-spacerun: yes">&nbsp; </span>
+            <img src="audioconfirm.PNG" /><o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight: normal"><span style="mso-no-proof: yes">Next</span></b><span
+            style="mso-no-proof: yes">, we’ll check what is the selected index by checking the
+            “Title Index” and adding appropiate commands.<o:p></o:p></span></p>
+    <p class="MsoNormal">
+        <img src="index0.PNG" /></p>
+    <p class="MsoNormal">
+        <img src="index1.PNG" /></p>
+    <p class="MsoNormal">
+        <img src="index2.PNG" /></p>
+    <p class="MsoNormal">
+        This is the basic idea of the menu maker. First, you design the menu and then use
+        Events to command or “program” them.</p>
+    <p class="MsoNormal">
+        Now, think of a simple menu you would like to do and try it out.<span style="mso-spacerun: yes">&nbsp;
+        </span>There are many menu parts and properties, so drag and drop each to see their
+        purpose. You can also check out the templates to see some of the ways they can be
+        used.</p>
+    <p class="MsoNormal">
+        Have ideas for menu parts or properties? Post them at our Suggestion forums with
+        the appropriate tag [Menu].</p>
+</body>
+</html>

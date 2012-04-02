@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="EGMGame.Config">
+    <UseGuide>true</UseGuide>
+    <RecentProjects>
+      <Item>
+        <Name>Shooter Template</Name>
+        <Description>A template for the scrolling shooter genre.</Description>
+        <Location>C:\Users\Muhammet\Documents\EGM Projects\Shooter Template\Project.egmproj</Location>
+      </Item>
+      <Item>
+        <Name>Project</Name>
+        <Description>A game made with EGM.</Description>
+        <Location>C:\Users\Muhammet\Documents\EGM Projects\Project\Project.egmproj</Location>
+      </Item>
+    </RecentProjects>
+    <CrashedProjects />
+    <PlatformerUpdateWarned>false</PlatformerUpdateWarned>
+    <EventCommandsTips>true</EventCommandsTips>
+    <AnimationTips>true</AnimationTips>
+    <AudioMaterailTip>true</AudioMaterailTip>
+    <VideoMaterailTip>false</VideoMaterailTip>
+    <ImageMaterailTip>true</ImageMaterailTip>
+    <BitmapFontMaterailTip>true</BitmapFontMaterailTip>
+    <LastProjectDirectory>C:\Users\Muhammet\Documents\EGM Projects\</LastProjectDirectory>
+  </Asset>
+</XnaContent>
