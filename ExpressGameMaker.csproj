@@ -4224,7 +4224,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Service References\DRMService\mex.disco" />
-    <Content Include="License.txt" />
     <Content Include="Tutorials\HowTo\Advanced\Menu\audioconfirm.PNG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
