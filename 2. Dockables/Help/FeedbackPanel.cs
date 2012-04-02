@@ -21,7 +21,7 @@ namespace EGMGame.Docking.Settings
             InitializeComponent();
             dockContextMenu1.owner = this;
             this.TabPageContextMenuStrip = dockContextMenu1;
-            webBrowser.Url = new Uri(@"http://expressgamemaker.com/Account/Surveys/");
+            //webBrowser.Url = new Uri(@"https://expressgamemaker.com/Account/Surveys/");
         }
     }
 }

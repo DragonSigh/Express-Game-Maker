@@ -21,6 +21,7 @@ namespace EGMGame.Docking.Explorers
         public TutorialExplorer()
         {
             InitializeComponent();
+
             string path = Path.GetDirectoryName(
                 Assembly.GetExecutingAssembly().GetModules()
                 [0].FullyQualifiedName) +
