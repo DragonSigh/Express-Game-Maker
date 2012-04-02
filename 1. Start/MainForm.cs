@@ -1132,6 +1132,8 @@ namespace EGMGame
         DeserializeDockContent m_deserializeDockContent;
         TestPlayDialog testPlayDialog;
         LoadDialog loadDialog;
+
+        string EnginePath = @"C:\EGMGame";
         #endregion
 
         public MainForm()
@@ -2497,8 +2499,8 @@ namespace EGMGame
                         file.Delete();
                     }
                     // Update Source Directory
-                    LoopSourceDirectories(@"C:\EGMGame\EGMGame");
-                    LoopSourceDirectories(@"C:\EGMGame\GameLibrary");
+                    LoopSourceDirectories(EnginePath + @"\EGMGame");
+                    LoopSourceDirectories(EnginePath + @"\GameLibrary");
 #endif
                     CopySourceFilesToProject();
 
@@ -2554,15 +2556,6 @@ namespace EGMGame
                 }
                 CopySourceDirectories(Application.StartupPath + @"\Source");
 
-                //foreach (string path in Directory.GetFiles(Application.StartupPath + @"\Source"))
-                //{
-                //    FileInfo file = new FileInfo(path);
-                //    if (file.Exists && file.Extension.ToLower() == ".cs")
-                //    {
-                //        File.Copy(path, Path.Combine(CurrentProject.Location + @"\Source", file.Name), true);
-                //        CurrentProject.SourceFiles.Add(new SourceFile(Path.Combine(CurrentProject.Location + @"\Source", file.Name).Replace(CurrentProject.Location, "")));
-                //    }
-                //}
                 File.Copy(Application.StartupPath + @"\Source\Game.ico", CurrentProject.Location + @"\Game.ico", true);
             }
             catch
@@ -2613,10 +2606,10 @@ namespace EGMGame
             {
                 FileInfo file = new FileInfo(path);
                 newPath = file.FullName;
-                if (newPath.Contains(@"C:\EGMGame\EGMGame"))
-                    newPath = file.FullName.Replace(@"C:\EGMGame\EGMGame", "");
-                if (newPath.Contains(@"C:\EGMGame\GameLibrary"))
-                    newPath = file.FullName.Replace(@"C:\EGMGame\GameLibrary", "");
+                if (newPath.Contains(EnginePath + @"\EGMGame"))
+                    newPath = file.FullName.Replace(EnginePath + @"\EGMGame", "");
+                if (newPath.Contains(EnginePath + @"\GameLibrary"))
+                    newPath = file.FullName.Replace(EnginePath + @"\GameLibrary", "");
                 if (file.Exists && !File.Exists(Application.StartupPath + @"\Source" + newPath))
                 {
                     if (file.Extension.ToLower() == ".cs" || file.Extension.ToLower() == ".ico")
@@ -3343,8 +3336,8 @@ namespace EGMGame
                     if (File.GetAttributes(path) == FileAttributes.ReadOnly) File.SetAttributes(path, FileAttributes.Normal);
                     File.Delete(path);
                 }
-                LoopSourceDirectories(@"C:\EGMGame\EGMGame");
-                LoopSourceDirectories(@"C:\EGMGame\GameLibrary");
+                LoopSourceDirectories(EnginePath + @"\EGMGame");
+                LoopSourceDirectories(EnginePath + @"\GameLibrary");
 
                 sourceDir = new DirectoryInfo(CurrentProject.Location + @"/Source");
                 // Empty Source Directory
