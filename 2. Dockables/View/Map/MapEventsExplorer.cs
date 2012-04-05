@@ -50,7 +50,7 @@ namespace EGMGame.Docking.Explorers
                     foreach (EventData e in layer.Events.Values)
                     {
                         events.Add(e);
-                        node = new TreeNode(e.Name, 1, 1);
+                        node = new TreeNode("ID : " + e.ID + "   " + e.Name, 1, 1);
                         node.Tag = j;
                         list.Nodes[i].Nodes.Add(node);
                         j++;
@@ -58,7 +58,7 @@ namespace EGMGame.Docking.Explorers
                     if (GameData.Player.MapID == MainForm.SelectedMap.ID && GameData.Player.LayerIndex == i)
                     {
                         events.Add(GameData.Player);
-                        node = new TreeNode(GameData.Player.Name, 1, 1);
+                        node = new TreeNode("ID : " + GameData.Player.ID + "   " + GameData.Player.Name, 1, 1);
                         node.Tag = j;
                         list.Nodes[i].Nodes.Add(node);
                         j++;

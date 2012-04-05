@@ -4017,7 +4017,6 @@ namespace EGMGame.Controls
             // Draw a Transparent square.
             foreach (EventData e in layer.Events.Values)
             {
-                //if (!e.GetRectangle(gridWidth, gridHeight).IntersectsWith(streamArea)) continue;
                 if (e.Pages.Count > 0)
                 {
                     AnimationData ani = Global.GetData<AnimationData>(e.Pages[0].AnimationID, GameData.Animations);
@@ -4036,7 +4035,6 @@ namespace EGMGame.Controls
                                 }
                                 if (tex != null)
                                 {
-                                    //offset.Y = act.CanvasSize.Y;
                                     spriteBatch.Draw(
                                         tex,
                                         e.Position - offset + sprite.Position,
@@ -4062,10 +4060,6 @@ namespace EGMGame.Controls
                         else
                         {
                             DrawEvent(index, e, false, act);
-                            //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y - -(act.CanvasSize.Y), gridWidth, gridHeight);
-                            //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                            //DrawText(index.ToString(), Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
-
                             if (e.Pages[0].GetParticle(graphicsControl.GraphicsDevice, contentManager) != null)
                             {
                                 ParticleSystemData pdata = e.Pages[0].GetParticle(graphicsControl.GraphicsDevice, contentManager);
@@ -4076,8 +4070,6 @@ namespace EGMGame.Controls
                     else
                     {
                         DrawEvent(index, e, false, null);
-                        //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                        //DrawText(index.ToString(), Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
 
                         if (e.Pages[0].GetParticle(graphicsControl.GraphicsDevice, contentManager) != null)
                         {
@@ -4089,9 +4081,6 @@ namespace EGMGame.Controls
                 else
                 {
                     DrawEvent(index, e, false, null);
-                    //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y - gridHeight, gridWidth, gridHeight);
-                    //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                    //DrawText(index.ToString(), Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
                 }
             }
             // Draw Player
@@ -4135,10 +4124,6 @@ namespace EGMGame.Controls
                                     }
                                 }
                                 DrawPlayer(index);
-                                //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y - (act.CanvasSize.Y), act.CanvasSize.X, act.CanvasSize.Y);
-                                //if (!isDim) DrawRectangle(rect, Color.White, 1, 1);
-                                //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
-
                                 if (GameData.Player.Page.GetParticle(graphicsControl.GraphicsDevice, contentManager) != null)
                                 {
                                     ParticleSystemData pdata = GameData.Player.Page.GetParticle(graphicsControl.GraphicsDevice, contentManager);
@@ -4154,10 +4139,6 @@ namespace EGMGame.Controls
                             else
                             {
                                 DrawPlayer(index);
-                                //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                                //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
-
-
                                 if (GameData.Player.Page.GetParticle(graphicsControl.GraphicsDevice, contentManager) != null)
                                 {
                                     ParticleSystemData pdata = GameData.Player.Page.GetParticle(graphicsControl.GraphicsDevice, contentManager);
@@ -4165,7 +4146,6 @@ namespace EGMGame.Controls
                                     if (act.CollisionBody != null && act.CollisionBody.Count > 0)
                                     {
                                         geomOffset = act.CollisionBody.GetCentroid();
-                                        //geomOffset.Y -= (act.CanvasSize.Y);
                                     }
                                     DrawParticles(pdata, GameData.Player.Position + geomOffset);
                                 }
@@ -4174,50 +4154,20 @@ namespace EGMGame.Controls
                         else
                         {
                             DrawPlayer(index);
-                            //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y - gridHeight, gridWidth, gridHeight);
-                            //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                            //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
                         }
 
                     }
                     else
                     {
                         DrawPlayer(index);
-                        //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y - gridHeight, gridWidth, gridHeight);
-                        //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                        //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
                     }
                 }
                 else
                 {
                     DrawPlayer(index);
-                    //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y - gridHeight, gridWidth, gridHeight);
-                    //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-                    //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
                 }
 
             }
-            //}
-            //else
-            //{
-            //    // Draw a Transparent square.
-            //    foreach (EventData e in layer.Events.Values)
-            //    {
-            //        DrawEvent(index, e, false, null);
-            //        //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y - gridHeight, gridWidth, gridHeight);
-            //        //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-            //        //DrawText(index.ToString(), Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
-            //    }
-
-            //    // Draw Player
-            //    if (GameData.Player.MapID == map.Data.ID && GameData.Player.LayerIndex == index)
-            //    {
-            //        DrawPlayer(index);
-            //        //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y - gridHeight, gridWidth, gridHeight);
-            //        //FillRectangle(rect, Color.White, fillColor, 1, (!isDim));
-            //        //DrawText(index.ToString() + " " + GameData.Player.Name, Color.Red, new Vector2(rect.Right - 7f, rect.Y - 10f));
-            //    }
-            //}
         }
 
         private void DrawParticles(ParticleSystemData pdata, Vector2 pos)
@@ -4234,19 +4184,15 @@ namespace EGMGame.Controls
             {
                 int offRect = 12;
                 System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y, act.CanvasSize.X, act.CanvasSize.Y + offRect);
-                //>System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y - (act.CanvasSize.Y), act.CanvasSize.X, act.CanvasSize.Y);
-                //if (!isDim) DrawRectangle(rect, Color.White, 1, 1);
+
                 if (showCollision && act != null)
                 {
                     Vertices body = new Vertices(act.CollisionBody);
-                    //body.Rotate(MathHelper.ToRadians(e.Rotation));
                     for (int b = 0; b < body.Count; b++)
                     {
                         int verticeCount = body.Count;
 
                         Vector2 finalPos = e.Position;
-                        //offset.X = 64 / 2;
-                        //offset.Y = 64 / 2;
                         if (b < verticeCount - 1)
                         {
                             DrawLine(finalPos + body[b + 1], finalPos + body[b], Color.Yellow, 2, 1);
@@ -4292,9 +4238,6 @@ namespace EGMGame.Controls
                 DrawLine(new Vector2(rect.X, rect.Y + 3), new Vector2(rect.X, rect.Y + rect.Height - textAreaShift), baseBorderColor, 1, 0);
                 DrawLine(new Vector2(rect.X + rect.Width, rect.Y + 3), new Vector2(rect.X + rect.Width, rect.Y + rect.Height - textAreaShift), baseBorderColor, 1, 0);
 
-                // Draw Tile Outline
-                //DrawRoundedRectangle(new System.Drawing.RectangleF(rect.X, rect.Y + rect.Height - textAreaShift - 3 - 30, rect.Width, 20), baseBorderColor, new Color(255, 255, 255,100), 1, true, 3, new List<int>() { 1, 2 });
-                //FillRectangle(new System.Drawing.RectangleF(rect.X - 1, rect.Y + rect.Height - textAreaShift - 30, rect.Width + 1, 32), baseBorderColor, new Color(255, 255, 255, 100), 1, false);
                 // Draw Text Area
                 DrawRoundedRectangle(new System.Drawing.RectangleF(rect.X, rect.Y + rect.Height - textAreaShift - 2, rect.Width, 20), baseBorderColor, textAreaColor, 0, true, 3, new List<int>() { 3, 4 });
                 FillRectangle(new System.Drawing.RectangleF(rect.X - 1, rect.Y + rect.Height - textAreaShift, rect.Width + 1, 15), baseBorderColor, textAreaColor, 0, false);
@@ -4306,7 +4249,6 @@ namespace EGMGame.Controls
                 spriteBatch.Draw(
                     layerCircleTexture,
                     new Vector2(e.Position.X + act.CanvasSize.X - (layerCircleTexture.Width / 2), e.Position.Y - (layerCircleTexture.Height / 2)),
-                    //>new Vector2(e.Position.X + act.CanvasSize.X - (layerCircleTexture.Width / 2), e.Position.Y - act.CanvasSize.Y - (layerCircleTexture.Height / 2)),
                     new Rectangle(0, 0, 14, 14),
                     Color.White,
                     0f,
@@ -4324,7 +4266,6 @@ namespace EGMGame.Controls
 
                 DrawText(index.ToString(), Color.White, layerPos);
 
-                //FillRectangle(new System.Drawing.RectangleF(e.Position.X, e.Position.Y - 1, act.CanvasSize.X, 24), Color.Wheat, Color.Gray, 1);
 
                 if (Global.Font.MeasureString(e.Name).X > rect.Width - 6)
                 {
@@ -4353,6 +4294,7 @@ namespace EGMGame.Controls
                 e.Canvas = new Vector2(gridWidth, gridHeight);
                 if (selectedEvent == e)
                 {
+                   
                     selectedEvent.Canvas = act.CanvasSize;
                     // Draw Event Rotation
                     System.Drawing.RectangleF rectF = new System.Drawing.RectangleF(e.Position.X, e.Position.Y, act.CanvasSize.X, act.CanvasSize.Y);
@@ -4362,13 +4304,16 @@ namespace EGMGame.Controls
                     FillRectangle(e.GetTopLeft(act.CanvasSize), Color.Black, Color.Yellow, 0);
 
                     FillRectangle(e.GetMiddleLeft(act.CanvasSize), Color.Black, Color.White, 0);
+
+
+                    DrawText("Position: (" + ((int)e.Position.X).ToString() + ", " + ((int)e.Position.Y).ToString() + ")", Color.White, new Vector2(rect.Right - rect.Width, rect.Y + rect.Height + 10f));
+                    DrawText("Size: (" + rect.Width.ToString() + ", " + rect.Height.ToString() + ")", Color.White, new Vector2(rect.Right - rect.Width, rect.Y + rect.Height + 20f));
                 }
             }
             else
             {
                 int gridPadding = 0;
-                //>System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X + gridPadding - 1, e.Position.Y - gridHeight + gridPadding, gridWidth - (gridPadding * 2), gridHeight - (gridPadding * 2));
-                System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y, gridWidth, gridHeight);
+               System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X, e.Position.Y, gridWidth, gridHeight);
                 // Draw Base Outline
                 Color baseBorderColor;
                 Color textColor = Color.White; Color textAreaColor;
@@ -4469,13 +4414,14 @@ namespace EGMGame.Controls
                     DrawText(e.Name, textColor, new Vector2(e.Position.X + 2 + gridPadding, e.Position.Y + gridHeight - textAreaShift + 3 - gridPadding));
                 }
                 e.Canvas = new Vector2(gridWidth, gridHeight);
+
+
             }
         }
         private void DrawPlayer(int index)
         {
             int gridPadding = 0;
             System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X, GameData.Player.Position.Y, gridWidth, gridHeight);
-            //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(GameData.Player.Position.X + gridPadding - 1, GameData.Player.Position.Y - gridHeight + gridPadding, gridWidth - (gridPadding * 2), gridHeight - (gridPadding * 2));
             if (showCollision)
             {
                 if (GameData.Player.PartyList.Count > 0)
@@ -4488,14 +4434,11 @@ namespace EGMGame.Controls
                     {
                         AnimationAction act = Global.GetData<AnimationAction>(hdata.Actions[0], ani.Actions);
                         Vertices body = new Vertices(act.CollisionBody);
-                        //body.Rotate(MathHelper.ToRadians(GameData.Player.Rotation));
                         for (int b = 0; b < body.Count; b++)
                         {
                             int verticeCount = body.Count;
 
                             Vector2 finalPos = GameData.Player.Position;
-                            //offset.X = 64 / 2;
-                            //offset.Y = 64 / 2;
                             if (b < verticeCount - 1)
                             {
                                 DrawLine(finalPos + body[b + 1], finalPos + body[b], Color.Yellow, 2, 1);
@@ -4508,7 +4451,6 @@ namespace EGMGame.Controls
                     }
                 }
             }
-            //System.Drawing.RectangleF rect = new System.Drawing.RectangleF(e.Position.X , e.Position.Y - gridHeight + gridPadding, gridWidth - (gridPadding * 2), gridHeight - (gridPadding * 2));
             // Draw Base Outline
             Color baseBorderColor;
             Color textColor = Color.White; Color textAreaColor;
@@ -4543,7 +4485,6 @@ namespace EGMGame.Controls
             DrawRoundedRectangle(rect, baseBorderColor, new Color(255, 255, 255, 100), 0, true, 3, new List<int>() { 1, 2 });
             DrawLine(new Vector2(rect.X, rect.Y + 3), new Vector2(rect.X, rect.Y + rect.Height - textAreaShift), baseBorderColor, 1, 0);
             DrawLine(new Vector2(rect.X + rect.Width, rect.Y + 3), new Vector2(rect.X + rect.Width, rect.Y + rect.Height - textAreaShift), baseBorderColor, 1, 0);
-            //FillRectangle(new System.Drawing.RectangleF(rect.X - 1, rect.Y + 3, rect.Width + 1, rect.Height - textAreaShift), baseBorderColor, new Color(255, 255, 255, 100), 1, false);
 
             // Draw Text Area
             DrawRoundedRectangle(new System.Drawing.RectangleF(rect.X, rect.Y + rect.Height - textAreaShift - 2, rect.Width, 20), baseBorderColor, textAreaColor, 0, true, 3, new List<int>() { 3, 4 });
@@ -4577,17 +4518,6 @@ namespace EGMGame.Controls
                 0
             );
 
-            //spriteBatch.Draw(
-            //    lightbulbTexture,
-            //    new Vector2(rect.X + (rect.Width / 2) - (lightbulbTexture.Width / 2) - 1, rect.Y + (rect.Height / 2) - (lightbulbTexture.Height / 2) - 1 - gridPadding),
-            //    null,
-            //    new Color(255, 255, 255, 155),
-            //    0f,
-            //    Vector2.Zero,
-            //    1f,
-            //    SpriteEffects.None,
-            //    0
-            //);
 
             Vector2 layerPos = new Vector2(rect.Right - 3f, rect.Y - 5f);
             if (index.ToString().Length > 1)
@@ -4619,6 +4549,12 @@ namespace EGMGame.Controls
             else
             {
                 DrawText(GameData.Player.Name, textColor, new Vector2(GameData.Player.Position.X + 2 + gridPadding, GameData.Player.Position.Y + gridHeight - textAreaShift + 3 - gridPadding));
+            }
+
+            if (selectedEvent == GameData.Player)
+            {
+                DrawText("Position: (" + GameData.Player.Position.X.ToString() + ", " + GameData.Player.Position.Y.ToString() + ")", Color.White, new Vector2(rect.Right - rect.Width, rect.Y + rect.Height + 0f));
+                DrawText("Size: (" + rect.Width.ToString() + ", " + rect.Height.ToString() + ")", Color.White, new Vector2(rect.Right - rect.Width, rect.Y + rect.Height + 10f));
             }
         }
         /// <summary>
