@@ -8,6 +8,7 @@
 #endregion
 
 #region Using Statements
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

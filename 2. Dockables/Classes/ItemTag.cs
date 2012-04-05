@@ -6,6 +6,7 @@
  * Associated Files:    None
  * Modify:              If you want to add more properties to List Item tags.
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using System.Collections.Generic;
 using System.Linq;

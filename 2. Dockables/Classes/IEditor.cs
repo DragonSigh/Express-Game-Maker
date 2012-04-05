@@ -6,6 +6,7 @@
  * Associated Files:    None
  * Modify:              If you want to add a new Editor function to be inherited and implemented (An interface contains only the signatures of methods, delegates or events. The implementation of the methods is done in the class that implements the interface).
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com
 using System;
 using System.Collections.Generic;
 using System.Linq;

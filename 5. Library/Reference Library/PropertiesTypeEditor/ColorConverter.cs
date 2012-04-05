@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
+using System.Drawing;
 using System.Globalization;
 using System.Collections;
 using System;

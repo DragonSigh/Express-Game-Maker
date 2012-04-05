@@ -6,6 +6,7 @@
  * Associated Files:    None
  * Modify:              When you want to perform a function that needs to be done before the program starts.
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using System.Collections.Generic;
 using System.Linq;

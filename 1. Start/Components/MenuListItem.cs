@@ -6,6 +6,7 @@
  * Associated Files:    MenuList.cs, MenuListItemCollection.cs
  * Modify:              When you want to modify the ways are displayed.
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

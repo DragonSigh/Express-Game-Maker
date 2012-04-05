@@ -6,6 +6,7 @@
  * Associated Files:    .xnb Files
  * Modify:              If you want to improve loading or add new content type loading.
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using System.Collections.Generic;
 using System.Linq;

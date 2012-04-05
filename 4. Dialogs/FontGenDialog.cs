@@ -1,4 +1,5 @@
 #region Using Statements
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com 
 using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;

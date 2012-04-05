@@ -6,6 +6,7 @@
  * Associated Files:    N/A
  * Modify:              If you want to add a shared command that could be useful through out the editor.
  */
+//* Copyright (c) 2010, Virtual Impact Studios LLC www.expressgamemaker.com
 using System;
 using System.Collections.Generic;
 using System.Linq;
