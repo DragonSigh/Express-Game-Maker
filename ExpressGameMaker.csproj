@@ -5151,8 +5151,8 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>"%25ProgramW6432%25\Microsoft SDKs\Windows\v7.0\Bin\UICC.exe"  "$(ProjectDir)RibbonMarkup.xml" "$(ProjectDir)RibbonMarkup.bml" /res:"$(ProjectDir)RibbonMarkup.rc"
-"%25ProgramW6432%25\Microsoft SDKs\Windows\v7.0\Bin\rc.exe" /v "$(ProjectDir)RibbonMarkup.rc"
+    <PreBuildEvent>"$(ProgramFiles)\Microsoft SDKs\Windows\v7.1\Bin\UICC.exe"  "$(ProjectDir)RibbonMarkup.xml" "$(ProjectDir)RibbonMarkup.bml" /res:"$(ProjectDir)RibbonMarkup.rc"
+"$(ProgramFiles)\Microsoft SDKs\Windows\v7.1\Bin\rc.exe" /v "$(ProjectDir)RibbonMarkup.rc"
 cmd /c "("$(DevEnvDir)..\..\VC\bin\vcvars32.bat") &amp;&amp; ("$(DevEnvDir)..\..\VC\bin\link.exe" /VERBOSE /NOENTRY /DLL /OUT:"$(ProjectDir)$(OutDir)$(TargetName).ribbon.dll" "$(ProjectDir)RibbonMarkup.res")"</PreBuildEvent>
   </PropertyGroup>
 </Project>
