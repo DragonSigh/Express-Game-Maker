@@ -17,8 +17,8 @@
  * MenuContainer.cs - This the class that holds the three lists in the Home Page (Getting Started, Returning User, News).
  * MenuList.cs - This the class that holds Home Page menu items for "Getting Started" and "Returning User".
  * MenuListItem.cs - This the class that holds the Menu Text.
- * MenuListItemCollection.cs -  This the class that holds the Menu Items.
+ * MenuListItemCollection.cs - This the class that holds the Menu Items.
  * NewsMenuList.cs - This the class that holds Home Page menu items for News.
  * NewsMenuListItem.cs - This the class that holds the News Text.
- * NewsMenuListItemCollection.cs -  This the class that holds the News Menu Items.
+ * NewsMenuListItemCollection.cs - This the class that holds the News Menu Items.
  */

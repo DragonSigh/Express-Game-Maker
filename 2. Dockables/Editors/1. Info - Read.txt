@@ -1,10 +1,10 @@
 ﻿/* -----------------------------
  * Editors
  * -----------------------------
- * Content - Contains editors for Animations, Audio, Font and Text
- * Data - Contains editor for variables. Variable, String, Switch, and List
+ * Content - Contains editors for Animations, Audio, Font and Text.
+ * Data - Contains editor for variables. Variable, String, Switch, and List.
  * Effects - Contains the Particle Editor.
- * Event - Contains event editors. Event Editor, Global Event Editor, Player Editor
+ * Event - Contains event editors. Event Editor, Global Event Editor, Player Editor.
  * Game - Contains game character editors such as Hero Editor, Enemy Editor, Equipment Editor, and etc.
  * Map - Contains Map related editors. Map Editor and Tileset editor.
  * Menu - Contains Menu and Menu Skin editor.

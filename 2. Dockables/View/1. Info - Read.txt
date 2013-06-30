@@ -3,10 +3,10 @@
  * -----------------------------
  * Content -  Contains the Material Explorer and Material Preview.
  * Game - Contains the Database Explorer which is used to select and open user created databases.
- * Map - Contains Map related explorers. Maps, Layers, Tiles, Map Events, and EVents.
+ * Map - Contains Map related explorers. Maps, Layers, Tiles, Map Events, and Events.
  * Menu - Contains the Menu Parts Explorer used to addd Menu Parts such as Window and Button to Menus.
  * Other - Contaıns the History and Error explorers.
- * Source - Contains the Source editor.
+ * Source - Contains the Source Editor.
  * -----------------------------
  * ObjectPropertyExplorer.cs - Currently used for the Menu but has the potential to be used for all objects/data.
  */
